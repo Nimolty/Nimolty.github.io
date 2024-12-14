@@ -213,30 +213,28 @@
 
 
     <!-- Animation. -->
-    <div class="rows is-centered has-text-centered ">
+    <div class="rows is-centered">
       <div class="row is-full-width">
-        <h2 class="title is-3">Pipeline of Seer</h2>
-
-        <!-- Interpolating. -->
+        <h2 class="title is-3">Real World Wipe Board Task</h2>
         <div class="content has-text-justified">
-        <!-- <br> -->
-        </div>
-        <img src="media/figures/seer_method.jpg" class="interpolation-image" />
-        </br>
-        </br>
           <p class="content has-text-justified">
-            <b>Seer</b> consists of three  parts: Multi-Modal Encoder, Conditional Visual Foresight and Inverse Dynamics Prediction.
-            In Multi-Modal Encoder, <b>Seer</b> incorporates the foresight token <b>[FRS]</b> and the action token <b>[INV]</b>. 
-            Both tokens attend to the RGB images, language tokens, and robot state tokens, with <b>[INV]</b> also attending to <b>[FRS]</b>.
-            In Conditional Visual Foresight, the encoded <b>[FRS]</b>, along with new mask tokens, aims to reconstruct future RGB images. 
-            In Inverse Dynamics Prediction, the encoded <b>[INV]</b> and other tokens speculate intermediary actions.
+            In this task, the robot needs to (1) grasp the brush, and (2) sweep all the small objects into the dustpan.
           </p>
-
+        </div>
+        <div class="content has-text-centered">
+          <video id="wipe_board_one_take_cp"
+                 controls
+                 muted
+                 preload
+                 playsinline
+                 width="100%">
+            <source src="media/wipe_board_one_take_cp.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
     </div>
   </div>
 </section>
-
-
 
 
 <section class="section">
