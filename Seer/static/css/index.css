@@ -186,3 +186,6 @@ body {
   text-align: justify;
 }
 
+.has-text-size-4 { 
+  font-size: 1.5rem; /* 或者你可以设置一个更大的值，比如 2rem */ 
+}
