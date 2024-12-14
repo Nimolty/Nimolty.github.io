@@ -132,66 +132,9 @@
   </div>
 </section>
 
-<section class="teaser">
-  <div class="teaser flag">
-
-    <div class="rows">
-      <h2 class="title is-3"></h2>
-      <div style="text-align: center;">
-        <img src="media/figures/Teaser.jpg" class="interpolation-image" style="width: 20%; height: 20%;"/>
-      </div>
-      <br>
-      <h2 class="subtitle has-text-centered">
-        Given <b>RGB</b> images, we aim to estimate the robot pose and joint angles.<br> 
-        We achieve this goal by decoupling it into two more tractable tasks: <b>2D keypoints detection</b> 
-        and <b>lifting 2D keypoints to 3D</b>.
-      </h2>
-    </div>
-
-  </div>
-
-</section>
 
 
 
-
-<h2 class="subtitle has-text-centered">
-</br>
-  With the robot pose and joint angles predicted by <b>RoboKeyGen</b>, robots could implement downstream tasks such as <b>Visual Servoing</b> 
-  and <b>Grasping</b>.
-</h2>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Estimating robot pose and joint angles is significant in robotics, 
-            enabling applications like robot collaboration and online hand-eye calibration.
-            However, the introduction of unknown joint angles makes prediction more complex than simple robot pose estimation, 
-            due to its higher dimensionality.
-            Previous methods either regress 3D keypoints directly or utilise a render&compare strategy. 
-            These approaches often falter in terms of performance or efficiency and grapple with the cross-camera gap problem.
-            This paper presents a novel framework that bifurcates the high-dimensional prediction task into two manageable subtasks: 
-            2D keypoints detection and lifting 2D keypoints to 3D. 
-            This separation promises enhanced performance without sacrificing the efficiency innate to keypoint-based techniques.
-            A vital component of our method is the lifting of 2D keypoints to 3D keypoints. 
-            Common deterministic regression methods may falter when faced with uncertainties from 2D detection errors or self-occlusions.
-            Leveraging the robust modeling potential of diffusion models, we reframe this issue as conditional 3D keypoints generation.
-            To bolster cross-camera adaptability, we introduce the <i>Normalised Camera Coordinate Space (NCCS)</i>, 
-            ensuring alignment of estimated 2D keypoints across varying camera intrinsics.
-            Experimental results demonstrate that the proposed method outperforms the state-of-the-art render&compare method and achieves higher inference speed.
-            Furthermore, the tests accentuate our method's robust cross-camera generalisation capabilities.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-
-  </div>
 
 
   <!-- Paper video. -->
