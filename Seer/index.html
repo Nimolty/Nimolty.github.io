@@ -143,9 +143,9 @@
             Current efforts to learn scalable policies in robotic manipulation primarily fall into two categories: one focuses on "action," which involves behavior cloning from extensive collections of robotic data, while the other emphasizes "vision," enhancing model generalization by pre-training representations or generative models, also referred to as world models, using large-scale visual datasets.
             This paper presents an end-to-end paradigm that predicts actions using inverse dynamics models conditioned on the robot's forecasted visual states, named Predictive Inverse Dynamics Models (PIDM).
             By closing the loop between vision and action, the end-to-end PIDM can be a better scalable action learner.
-            In practice, we use Transformers to process both visual states and actions, naming the model Seer. 
+            In practice, we use Transformers to process both visual states and actions, naming the model <b>Seer</b>. 
             It is initially pre-trained on large-scale robotic datasets, such as DROID, and can be adapted to real-world scenarios with a little fine-tuning data.
-            Thanks to large-scale, end-to-end training and the continuous synergy between vision and action at each execution step, Seer significantly outperforms state-of-the-art methods across both simulation and real-world experiments. 
+            Thanks to large-scale, end-to-end training and the continuous synergy between vision and action at each execution step, <b>Seer</b> significantly outperforms state-of-the-art methods across both simulation and real-world experiments. 
             It achieves improvements of 13% on the LIBERO-LONG benchmark, 22% on CALVIN ABC-D, and 43% in real-world tasks.
             Notably, it demonstrates superior generalization for novel objects, lighting conditions, and environments under high-intensity disturbances.
           </p>
@@ -158,7 +158,35 @@
 </section>
 
 
+<section class="section">
+  <div class="container is-max-widescreen">
 
+    <div class="rows">
+
+
+    <!-- Animation. -->
+    <div class="rows is-centered has-text-centered ">
+      <div class="row is-full-width">
+        <h2 class="title is-3">Pipeline of Seer</h2>
+
+        <!-- Interpolating. -->
+        <div class="content has-text-justified">
+        <!-- <br> -->
+        </div>
+        <img src="media/figures/seer_method.jpg" class="interpolation-image" />
+        </br>
+        </br>
+          <p class="content has-text-justified">
+            <b>Seer</b> consists of three  parts: Multi-Modal Encoder, Conditional Visual Foresight and Inverse Dynamics Prediction.
+            In Multi-Modal Encoder, <b>Seer</b> incorporates the foresight token <b>FRS</b> and the action token <b>INV</b>. 
+            Both tokens attend to the RGB images, language tokens, and robot state tokens, with <b>INV</b> also attending to <b>FRS</b>.
+            In Conditional Visual Foresight, the encoded <b>FRS</b>, along with new mask tokens, aims to reconstruct future RGB images. 
+            In Inverse Dynamics Prediction, the encoded <b>INV</b> and other tokens speculate intermediary actions.
+          </p>
+
+    </div>
+  </div>
+</section>
 
 
 
