@@ -47,7 +47,7 @@
           <h3 class="title is-4 conference-authors"><a target="_blank" >In Submission</a></h3>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a target="_blank" href="https://github.com/Nimolty?tab=overview&from=2024-01-01&to=2024-01-31">Yang Tian</a><sup>*,1,2,3,4</sup>,
+              <a target="_blank" href="https://github.com/Nimolty?tab=overview&from=2024-01-01&to=2024-01-31">Yang Tian</a><sup>*,1,2,3</sup>,
             </span>
             <span class="author-block">
               <a target="_blank" href="https://yangsizhe.github.io/">Sizhe Yang</a><sup>*,5,1</sup>,
@@ -133,29 +133,41 @@
 </section>
 
 <section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Current efforts to learn scalable policies in robotic manipulation primarily fall into two categories: one focuses on "action," which involves behavior cloning from extensive collections of robotic data, while the other emphasizes "vision," enhancing model generalization by pre-training representations or generative models, also referred to as world models, using large-scale visual datasets.
-            This paper presents an end-to-end paradigm that predicts actions using inverse dynamics models conditioned on the robot's forecasted visual states, named Predictive Inverse Dynamics Models (PIDM).
-            By closing the loop between vision and action, the end-to-end PIDM can be a better scalable action learner.
-            In practice, we use Transformers to process both visual states and actions, naming the model <b>Seer</b>. 
-            It is initially pre-trained on large-scale robotic datasets, such as DROID, and can be adapted to real-world scenarios with a little fine-tuning data.
-            Thanks to large-scale, end-to-end training and the continuous synergy between vision and action at each execution step, <b>Seer</b> significantly outperforms state-of-the-art methods across both simulation and real-world experiments. 
-            It achieves improvements of 13% on the LIBERO-LONG benchmark, 22% on CALVIN ABC-D, and 43% in real-world tasks.
-            Notably, it demonstrates superior generalization for novel objects, lighting conditions, and environments under high-intensity disturbances.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
+  <div class="container is-max-widescreen">
 
+    <div class="rows">
+
+
+    <!-- Animation. -->
+    <div class="rows is-centered has-text-centered ">
+      <div class="row is-full-width">
+        <h2 class="title is-3">Highlight</h2>
+
+        <!-- Interpolating. -->
+        <div class="content has-text-justified">
+        <!-- <br> -->
+        </div>
+        <img src="media/figures/seer_teaser.jpg" class="interpolation-image" />
+        </br>
+        </br>
+          <p class="content has-text-justified">
+            <b>End-to-End PIDM:</b> We prepose an end-to-end model <b>Seer</b> 
+            that predicts actions using inverse dynamics models conditioned on the robot's forecasted visual states, 
+            named Predictive Inverse Dynamics Models (PIDM).
+          </p>
+          <p class="content has-text-justified">
+            <b>Scalability:</b> <b>Seer</b> is initially pre-trained on large-scale robotic datasets, such as DROID, 
+            and can be adapted to downstream tasks with a little fine-tuning data. With an increasing model size,
+            <b>Seer</b> achieves a better performance.
+          </p>
+          <p class="content has-text-justified">
+            <b>Effectiveness:</b> <b>Seer</b> outperforms state-of-the-art methods across both simulation and real-world experiments.
+            It demonstrates superior generalization for novel objects, lighting conditions, and environments under high-intensity disturbances..
+          </p>
+    </div>
   </div>
 </section>
+
 
 
 <section class="section">
