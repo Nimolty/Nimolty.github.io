@@ -1,0 +1,4422 @@
+<!doctype html>
+<html
+  lang="en"
+  data-astro-cid-j7pv25f6
+  style="
+    --centuryGothicFont: /interndata-a1.github.io/fonts/centurygothic.ttf;
+    --centuryGothicBoldFont: /interndata-a1.github.io/fonts/centurygothic_bold.ttf;
+  "
+>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content="Astro v5.13.7" />
+    <title>
+      InternData-A1: Pioneering High-Fidelity Synthetic Data for Pre-training
+      Generalist Policy
+    </title>
+    <meta
+      name="description"
+      content="InternData-M1 research project homepage - A Spatially Guided Vision-Language-Action Framework for
+  Generalist Robot Policy"
+    />
+    <link rel="stylesheet" href="assets/index.CWgUuAyH.css" />
+  </head>
+  <body
+    class="bg-gray-100 min-h-screen"
+    data-astro-cid-j7pv25f6
+    style="
+      --centuryGothicFont: /interndata-a1.github.io/fonts/centurygothic.ttf;
+      --centuryGothicBoldFont: /interndata-a1.github.io/fonts/centurygothic_bold.ttf;
+    "
+  >
+    <!-- Hero Section -->
+    <section
+      class="flex items-center justify-center min-h-screen relative overflow-hidden"
+      data-astro-cid-j7pv25f6
+      style="
+        --centuryGothicFont: /interndata-a1.github.io/fonts/centurygothic.ttf;
+        --centuryGothicBoldFont: /interndata-a1.github.io/fonts/centurygothic_bold.ttf;
+      "
+    >
+      <!-- Background Video -->
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="absolute inset-0 w-full h-full object-cover z-0"
+        data-astro-cid-j7pv25f6
+        style="
+          --centuryGothicFont: /interndata-a1.github.io/fonts/centurygothic.ttf;
+          --centuryGothicBoldFont: /interndata-a1.github.io/fonts/centurygothic_bold.ttf;
+        "
+      >
+        <source
+          src="teaser.mp4"
+          type="video/mp4"
+          data-astro-cid-j7pv25f6
+          style="
+            --centuryGothicFont: /interndata-a1.github.io/fonts/centurygothic.ttf;
+            --centuryGothicBoldFont: /interndata-a1.github.io/fonts/centurygothic_bold.ttf;
+          "
+        />
+      </video>
+      <!-- Video Overlay -->
+      <div
+        class="absolute inset-0 bg-black bg-opacity-40 z-10"
+        data-astro-cid-j7pv25f6
+        style="
+          --centuryGothicFont: /interndata-a1.github.io/fonts/centurygothic.ttf;
+          --centuryGothicBoldFont: /interndata-a1.github.io/fonts/centurygothic_bold.ttf;
+        "
+      ></div>
+      <!-- Content -->
+      <main
+        class="max-w-5xl mx-auto px-8 py-8 text-center relative z-20"
+        data-astro-cid-j7pv25f6
+        style="
+          --centuryGothicFont: /interndata-a1.github.io/fonts/centurygothic.ttf;
+          --centuryGothicBoldFont: /interndata-a1.github.io/fonts/centurygothic_bold.ttf;
+        "
+      >
+        <section class="mb-8">
+          <!-- Large Project Name -->
+          <h1
+            class="text-6xl md:text-7xl font-bold text-white mb-6 tracking-tight drop-shadow-lg"
+          >
+            InternData-A1
+          </h1>
+          <!-- Subtitle -->
+          <h2
+            class="text-xl md:text-2xl text-gray-100 mb-8 font-normal max-w-4xl mx-auto leading-relaxed drop-shadow-md"
+          >
+            Pioneering High-Fidelity Synthetic Data for Pre-training Generalist
+            Policy
+          </h2>
+        </section>
+        <section class="mb-8">
+          <!-- Institution Logos -->
+          <div class="flex flex-wrap justify-center items-center gap-12">
+            <a
+              href="https://github.com/InternRobotics"
+              target="_blank"
+              class="flex flex-col items-center group transition-all duration-300 bg-white bg-opacity-30 backdrop-blur-sm rounded-lg p-3 shadow-lg hover:bg-opacity-60"
+            >
+              <img
+                src="logos/InternRobotics.png"
+                alt="Intern Robotics Logo"
+                class="h-12 mb-2 object-contain"
+              />
+              <span
+                class="text-white group-hover:text-white font-medium drop-shadow-md"
+                >Intern Robotics</span
+              >
+            </a>
+            <a
+              href="https://www.shlab.org.cn/"
+              target="_blank"
+              class="flex flex-col items-center group transition-all duration-300 bg-white bg-opacity-30 backdrop-blur-sm rounded-lg p-3 shadow-lg hover:bg-opacity-60"
+            >
+              <img
+                src="logos/ailab.png"
+                alt="Shanghai AI Laboratory Logo"
+                class="h-12 mb-2 object-contain"
+              />
+              <span
+                class="text-white group-hover:text-white font-medium drop-shadow-md"
+                >Shanghai AI Laboratory</span
+              >
+            </a>
+          </div>
+        </section>
+        <section data-astro-cid-szcpt32e>
+          <!-- Action Buttons -->
+          <div
+            class="flex flex-wrap justify-center gap-4"
+            data-astro-cid-szcpt32e
+          >
+            <a
+              href="https://github.com/InternRobotics"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-white bg-opacity-90 backdrop-blur-sm border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-full font-medium hover:bg-opacity-100 hover:border-black hover:text-black transition-all duration-300 flex items-center gap-2 shadow-lg"
+              data-astro-cid-szcpt32e
+            >
+              <svg
+                class="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                data-astro-cid-szcpt32e
+              >
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  data-astro-cid-szcpt32e
+                ></path>
+              </svg>
+              Code
+            </a>
+            <!-- <a
+              href="https://huggingface.co/collections/InternRobotics/InternData-m1-68c96eaebcb5867786ee6cf3"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-white bg-opacity-90 backdrop-blur-sm border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-full font-medium hover:bg-opacity-100 hover:border-black hover:text-black transition-all duration-300 flex items-center gap-2 shadow-lg"
+              data-astro-cid-szcpt32e
+            >
+              <svg
+                class="w-5 h-5 hf-yellow"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                data-astro-cid-szcpt32e
+              >
+                <path
+                  d="M12.025 1.13c-5.77 0-10.449 4.647-10.449 10.378 0 1.112.178 2.181.503 3.185.064-.222.203-.444.416-.577a.96.96 0 0 1 .524-.15c.293 0 .584.124.84.284.278.173.48.408.71.694.226.282.458.611.684.951v-.014c.017-.324.106-.622.264-.874s.403-.487.762-.543c.3-.047.596.06.787.203s.31.313.4.467c.15.257.212.468.233.542.01.026.653 1.552 1.657 2.54.616.605 1.01 1.223 1.082 1.912.055.537-.096 1.059-.38 1.572.637.121 1.294.187 1.967.187.657 0 1.298-.063 1.921-.178-.287-.517-.44-1.041-.384-1.581.07-.69.465-1.307 1.081-1.913 1.004-.987 1.647-2.513 1.657-2.539.021-.074.083-.285.233-.542.09-.154.208-.323.4-.467a1.08 1.08 0 0 1 .787-.203c.359.056.604.29.762.543s.247.55.265.874v.015c.225-.34.457-.67.683-.952.23-.286.432-.52.71-.694.257-.16.547-.284.84-.285a.97.97 0 0 1 .524.151c.228.143.373.388.43.625l.006.04a10.3 10.3 0 0 0 .534-3.273c0-5.731-4.678-10.378-10.449-10.378M8.327 6.583a1.5 1.5 0 0 1 .713.174 1.487 1.487 0 0 1 .617 2.013c-.183.343-.762-.214-1.102-.094-.38.134-.532.914-.917.71a1.487 1.487 0 0 1 .69-2.803m7.486 0a1.487 1.487 0 0 1 .689 2.803c-.385.204-.536-.576-.916-.71-.34-.12-.92.437-1.103.094a1.487 1.487 0 0 1 .617-2.013 1.5 1.5 0 0 1 .713-.174m-10.68 1.55a.96.96 0 1 1 0 1.921.96.96 0 0 1 0-1.92m13.838 0a.96.96 0 1 1 0 1.92.96.96 0 0 1 0-1.92M8.489 11.458c.588.01 1.965 1.157 3.572 1.164 1.607-.007 2.984-1.155 3.572-1.164.196-.003.305.12.305.454 0 .886-.424 2.328-1.563 3.202-.22-.756-1.396-1.366-1.63-1.32q-.011.001-.02.006l-.044.026-.01.008-.03.024q-.018.017-.035.036l-.032.04a1 1 0 0 0-.058.09l-.014.025q-.049.088-.11.19a1 1 0 0 1-.083.116 1.2 1.2 0 0 1-.173.18q-.035.029-.075.058a1.3 1.3 0 0 1-.251-.243 1 1 0 0 1-.076-.107c-.124-.193-.177-.363-.337-.444-.034-.016-.104-.008-.2.022q-.094.03-.216.087-.06.028-.125.063l-.13.074q-.067.04-.136.086a3 3 0 0 0-.135.096 3 3 0 0 0-.26.219 2 2 0 0 0-.12.121 2 2 0 0 0-.106.128l-.002.002a2 2 0 0 0-.09.132l-.001.001a1.2 1.2 0 0 0-.105.212q-.013.036-.024.073c-1.139-.875-1.563-2.317-1.563-3.203 0-.334.109-.457.305-.454m.836 10.354c.824-1.19.766-2.082-.365-3.194-1.13-1.112-1.789-2.738-1.789-2.738s-.246-.945-.806-.858-.97 1.499.202 2.362c1.173.864-.233 1.45-.685.64-.45-.812-1.683-2.896-2.322-3.295s-1.089-.175-.938.647 2.822 2.813 2.562 3.244-1.176-.506-1.176-.506-2.866-2.567-3.49-1.898.473 1.23 2.037 2.16c1.564.932 1.686 1.178 1.464 1.53s-3.675-2.511-4-1.297c-.323 1.214 3.524 1.567 3.287 2.405-.238.839-2.71-1.587-3.216-.642-.506.946 3.49 2.056 3.522 2.064 1.29.33 4.568 1.028 5.713-.624m5.349 0c-.824-1.19-.766-2.082.365-3.194 1.13-1.112 1.789-2.738 1.789-2.738s.246-.945.806-.858.97 1.499-.202 2.362c-1.173.864.233 1.45.685.64.451-.812 1.683-2.896 2.322-3.295s1.089-.175.938.647-2.822 2.813-2.562 3.244 1.176-.506 1.176-.506 2.866-2.567 3.49-1.898-.473 1.23-2.037 2.16c-1.564.932-1.686 1.178-1.464 1.53s3.675-2.511 4-1.297c.323 1.214-3.524 1.567-3.287 2.405.238.839 2.71-1.587 3.216-.642.506.946-3.49 2.056-3.522 2.064-1.29.33-4.568 1.028-5.713-.624"
+                  data-astro-cid-szcpt32e
+                ></path>
+              </svg>
+              Model
+            </a> -->
+            <a
+              href="https://huggingface.co/datasets/InternRobotics/InternData-A1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-white bg-opacity-90 backdrop-blur-sm border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-full font-medium hover:bg-opacity-100 hover:border-black hover:text-black transition-all duration-300 flex items-center gap-2 shadow-lg"
+              data-astro-cid-szcpt32e
+            >
+              <svg
+                class="w-5 h-5 dataset-blue"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                data-astro-cid-szcpt32e
+              >
+                <path
+                  d="M19.57 17.04l-1.997-1.316-1.665 2.782-1.937-.567-1.706 2.604.087.82 9.274-1.71-.538-5.794zm-8.649-2.498l1.488-.204c.241.108.409.15.697.223.45.117.97.23 1.741-.16.18-.088.553-.43.704-.625l6.096-1.106.622 7.527-10.444 1.882zm11.325-2.712l-.602.115L20.488 0 .789 2.285l2.427 19.693 2.306-.334c-.184-.263-.471-.581-.96-.989-.68-.564-.44-1.522-.039-2.127.53-1.022 3.26-2.322 3.106-3.956-.056-.594-.15-1.368-.702-1.898-.02.22.017.432.017.432s-.227-.289-.34-.683c-.112-.15-.2-.199-.319-.4-.085.233-.073.503-.073.503s-.186-.437-.216-.807c-.11.166-.137.48-.137.48s-.241-.69-.186-1.062c-.11-.323-.436-.965-.343-2.424.6.421 1.924.321 2.44-.439.171-.251.288-.939-.086-2.293-.24-.868-.835-2.16-1.066-2.651l-.028.02c.122.395.374 1.223.47 1.625.293 1.218.372 1.642.234 2.204-.116.488-.397.808-1.107 1.165-.71.358-1.653-.514-1.713-.562-.69-.55-1.224-1.447-1.284-1.883-.062-.477.275-.763.445-1.153-.243.07-.514.192-.514.192s.323-.334.722-.624c.165-.109.262-.178.436-.323a9.762 9.762 0 0 0-.456.003s.42-.227.855-.392c-.318-.014-.623-.003-.623-.003s.937-.419 1.678-.727c.509-.208 1.006-.147 1.286.257.367.53.752.817 1.569.996.501-.223.653-.337 1.284-.509.554-.61.99-.688.99-.688s-.216.198-.274.51c.314-.249.66-.455.66-.455s-.134.164-.259.426l.03.043c.366-.22.797-.394.797-.394s-.123.156-.268.358c.277-.002.838.012 1.056.037 1.285.028 1.552-1.374 2.045-1.55.618-.22.894-.353 1.947.68.903.888 1.609 2.477 1.259 2.833-.294.295-.874-.115-1.516-.916a3.466 3.466 0 0 1-.716-1.562 1.533 1.533 0 0 0-.497-.85s.23.51.23.96c0 .246.03 1.165.424 1.68-.039.076-.057.374-.1.43-.458-.554-1.443-.95-1.604-1.067.544.445 1.793 1.468 2.273 2.449.453.927.186 1.777.416 1.997.065.063.976 1.197 1.15 1.767.306.994.019 2.038-.381 2.685l-1.117.174c-.163-.045-.273-.068-.42-.153.08-.143.241-.5.243-.572l-.063-.111c-.348.492-.93.97-1.414 1.245-.633.359-1.363.304-1.838.156-1.348-.415-2.623-1.327-2.93-1.566 0 0-.01.191.048.234.34.383 1.119 1.077 1.872 1.56l-1.605.177.759 5.908c-.337.048-.39.071-.757.124-.325-1.147-.946-1.895-1.624-2.332-.599-.384-1.424-.47-2.214-.314l-.05.059a2.851 2.851 0 0 1 1.863.444c.654.413 1.181 1.481 1.375 2.124.248.822.42 1.7-.248 2.632-.476.662-1.864 1.028-2.986.237.3.481.705.876 1.25.95.809.11 1.577-.03 2.106-.574.452-.464.69-1.434.628-2.456l.714-.104.258 1.834 11.827-1.424zM15.05 6.848c-.034.075-.085.125-.007.37l.004.014.013.032.032.073c.14.287.295.558.552.696.067-.011.136-.019.207-.023.242-.01.395.028.492.08.009-.048.01-.119.005-.222-.018-.364.072-.982-.626-1.308-.264-.122-.634-.084-.757.068a.302.302 0 0 1 .058.013c.186.066.06.13.027.207m1.958 3.392c-.092-.05-.52-.03-.821.005-.574.068-1.193.267-1.328.372-.247.191-.135.523.047.66.511.382.96.638 1.432.575.29-.038.546-.497.728-.914.124-.288.124-.598-.058-.698m-5.077-2.942c.162-.154-.805-.355-1.556.156-.554.378-.571 1.187-.041 1.646.053.046.096.078.137.104a4.77 4.77 0 0 1 1.396-.412c.113-.125.243-.345.21-.745-.044-.542-.455-.456-.146-.749"
+                  data-astro-cid-szcpt32e
+                ></path>
+              </svg>
+              Dataset
+            </a>
+            <a
+              href="https://arxiv.org/abs/2510.13778"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-white bg-opacity-90 backdrop-blur-sm border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-full font-medium hover:bg-opacity-100 hover:border-black hover:text-black transition-all duration-300 flex items-center gap-2 shadow-lg"
+              data-astro-cid-szcpt32e
+            >
+              <svg
+                class="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                data-astro-cid-szcpt32e
+              >
+                <path
+                  d="M3.8423 0a1.0037 1.0037 0 0 0-.922.6078c-.1536.3687-.0438.6275.2938 1.1113l6.9185 8.3597-1.0223 1.1058a1.0393 1.0393 0 0 0 .003 1.4229l1.2292 1.3135-5.4391 6.4444c-.2803.299-.4538.823-.2971 1.1986a1.0253 1.0253 0 0 0 .9585.635.9133.9133 0 0 0 .6891-.3405l5.783-6.126 7.4902 8.0051a.8527.8527 0 0 0 .6835.2597.9575.9575 0 0 0 .8777-.6138c.1577-.377-.017-.7502-.306-1.1407l-7.0518-8.3418 1.0632-1.13a.9626.9626 0 0 0 .0089-1.3165L4.6336.4639s-.3733-.4535-.768-.463zm0 .272h.0166c.2179.0052.4874.2715.5644.3639l.005.006.0052.0055 10.169 10.9905a.6915.6915 0 0 1-.0072.945l-1.0666 1.133-1.4982-1.7724-8.5994-10.39c-.3286-.472-.352-.6183-.2592-.841a.7307.7307 0 0 1 .6704-.4401Zm14.341 1.5701a.877.877 0 0 0-.6554.2418l-5.6962 6.1584 1.6944 1.8319 5.3089-6.5138c.3251-.4335.479-.6603.3247-1.0292a1.1205 1.1205 0 0 0-.9763-.689zm-7.6557 12.2823 1.3186 1.4135-5.7864 6.1295a.6494.6494 0 0 1-.4959.26.7516.7516 0 0 1-.706-.4669c-.1119-.2682.0359-.6864.2442-.9083l.0051-.0055.0047-.0055z"
+                  data-astro-cid-szcpt32e
+                ></path>
+              </svg>
+              Arxiv
+            </a>
+            <a
+              href="https://youtu.be/n129VDqJCk4"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-white bg-opacity-90 backdrop-blur-sm border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-full font-medium hover:bg-opacity-100 hover:border-black hover:text-black transition-all duration-300 flex items-center gap-2 shadow-lg"
+              data-astro-cid-szcpt32e
+            >
+              <svg
+                class="w-5 h-5 video-red"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                data-astro-cid-szcpt32e
+              >
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  data-astro-cid-szcpt32e
+                ></path>
+              </svg>
+              Video
+            </a>
+          </div>
+        </section>
+      </main>
+    </section>
+    <!-- Content Sections -->
+    <section
+      class="py-8"
+      data-astro-cid-j7pv25f6
+      style="
+        --centuryGothicFont: /interndata-a1.github.io/fonts/centurygothic.ttf;
+        --centuryGothicBoldFont: /interndata-a1.github.io/fonts/centurygothic_bold.ttf;
+      "
+    >
+      <div
+        class="max-w-6xl mx-auto px-8"
+        data-astro-cid-j7pv25f6
+        style="
+          --centuryGothicFont: /interndata-a1.github.io/fonts/centurygothic.ttf;
+          --centuryGothicBoldFont: /interndata-a1.github.io/fonts/centurygothic_bold.ttf;
+        "
+      >
+        <!-- 引入 MathJax 在页面头部（放在 <head>） -->
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+        <section
+          class="bg-white rounded-lg shadow-sm p-6 mb-6 max-w-6xl mx-auto"
+        >
+          <h2 class="text-2xl font-bold text-gray-900 mb-4 text-center">
+            Abstract
+          </h2>
+          <p class="text-gray-700 leading-relaxed text-lg text-justify">
+            Recent work explores how real and synthetic data contribute to VLA model generalization. While the <span>\(\pi\)</span>-series model has shown the strong effectiveness 
+            of large-scale real-robot pre-training, synthetic data has not previously demonstrated comparable capability at scale.
+            This paper provides the first evidence that synthetic data alone can match the performance of the strongest <span>\(\pi\)</span>-dataset in pre-training a VLA model, 
+            revealing the substantial value of large-scale simulation.
+            The resulting model also exhibits surprisingly zero-shot sim-to-real transfer on several challenging tasks.
+            Our synthetic dataset, InternData-A1, contains over 630k trajectories and 7,433 hours across 4 embodiments, 18 skills, 70 tasks, and 227 scenes, covering 
+            rigid, articulated, deformable, and fluid-object manipulation. It is generated through a highly autonomous, fully decoupled, and compositional simulation 
+            pipeline that enables flexible task assembly, long-horizon skill composition, and heterogeneous embodiments with minimal manual tuning.
+            Using the same architecture as <span>\(\pi_0\)</span>, we pre-train a model entirely on InternData-A1 and find that it matches the official <span>\(\pi_0\)</span> across 49 simulation 
+            tasks, 5 real-world tasks, and 4 long-horizon dexterous tasks.
+            We will open-source both the dataset and the generation pipeline to broaden access to large-scale robotic data and to lower the barrier to scalable data 
+            creation for embodied AI research.
+          </p>
+        </section>
+        <!-- <div
+          class="bg-white rounded-lg shadow-sm p-6 mb-6"
+          data-astro-cid-j7pv25f6
+          style="
+            --centuryGothicFont: /interndata-a1.github.io/fonts/centurygothic.ttf;
+            --centuryGothicBoldFont: /interndata-a1.github.io/fonts/centurygothic_bold.ttf;
+          "
+        >
+          <div
+            class="relative w-full"
+            style="
+              padding-bottom: 56.25%; /* 16:9 aspect ratio */
+              --centuryGothicFont: /interndata-a1.github.io/fonts/centurygothic.ttf;
+              --centuryGothicBoldFont: /interndata-a1.github.io/fonts/centurygothic_bold.ttf;
+            "
+            data-astro-cid-j7pv25f6
+          >
+            <iframe
+              class="absolute top-0 left-0 w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/n129VDqJCk4?si=Z6MK8TG0iA88Ycbb"
+              title="InternData-M1 Demo Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+              data-astro-cid-j7pv25f6
+              style="
+                --centuryGothicFont: /interndata-a1.github.io/fonts/centurygothic.ttf;
+                --centuryGothicBoldFont: /interndata-a1.github.io/fonts/centurygothic_bold.ttf;
+              "
+            >
+            </iframe>
+          </div>
+        </div> -->
+        <section
+          class="bg-white rounded-lg shadow-sm p-6 mb-6 max-w-6xl mx-auto"
+        >
+          <h2 class="text-2xl font-bold text-gray-900 mb-4 text-center">
+            Dataset Overview
+          </h2>
+          <div class="flex justify-center">
+            <img
+              src="stats.png"
+              alt="InternData-A1 Dataset Overview"
+              class="max-w-full h-auto rounded-lg"
+            />
+          </div>
+          <p class="text-gray-600 text-center mt-3 text-sm">
+            InternData-A1 contains over 630k trajectories and 7,433 hours across 4 embodiments, 18 skills, 70 tasks, and 227 scenes, covering 
+            rigid, articulated, deformable, and fluid-object manipulation.
+          </p>
+        </section>
+
+        <section
+          class="bg-white rounded-lg shadow-sm p-6 mb-6 max-w-6xl mx-auto"
+        >
+          <h2 class="text-2xl font-bold text-gray-900 mb-4 text-center">
+            Data Generation Pipeline
+          </h2>
+          <div class="flex justify-center">
+            <img
+              src="pipeline.png"
+              alt="InternData-A1 Data Generation Pipeline"
+              class="max-w-full h-auto rounded-lg"
+            />
+          </div>
+          <p class="text-gray-600 text-center mt-3 text-sm">
+            The pipeline consists of four stages: (1) environment construction with selected embodiments, scenes, and objects; 
+            (2) task composition using modular atomic skills invoked via simple configuration commands; (3) domain randomization 
+            over layouts, object poses, lighting, etc.; (4) trajectory generation, where CuRobo 
+            interpolates dense joint actions, validates them through physics simulation, and renders only successful trajectories 
+            into the LeRobot format.
+          </p>
+        </section>
+
+        <section
+          class="bg-white rounded-lg shadow-sm p-6 mb-6 max-w-6xl mx-auto"
+        >
+          <h2 class="text-3xl font-bold text-gray-900 mb-4 text-center">
+            Results
+          </h2>
+          <p class="text-gray-600 text-center mb-6">
+            Watch InternData-A1 dataset including articulation tasks, basic tasks, long-horizon tasks and
+            pick-and-place tasks.
+          </p>
+          
+          <div class="my-8"></div>
+          <!-- Articulation Tasks Carousel -->
+          <style>
+            /* 缩小 carousel 容器宽度，向中居中显示 */
+            .carousel-container.shrunk {
+              max-width: 800px;
+              margin-left: auto;
+              margin-right: auto;
+            }
+            /* 视频缩小 */
+            .carousel-slide video.shrunk-video {
+              max-width: 800px;
+              width: 100%;
+            }
+            @media (max-width: 900px) {
+              .carousel-container.shrunk,
+              .carousel-slide video.shrunk-video {
+                max-width: 100% !important;
+              }
+            }
+          </style>
+          <h3 class="text-2xl font-bold text-gray-900 mt-10 mb-4 text-center">
+            Articulation Tasks
+          </h3>
+          <div
+            class="carousel-container shrunk"
+            id="videoCarousel-articulation-tasks"
+            data-astro-cid-6ebw4llp
+          >
+            <div
+              class="carousel-wrapper"
+              id="carouselWrapper-articulation-tasks"
+              data-astro-cid-6ebw4llp
+              style="transition: transform 0.5s cubic-bezier(0.4,0,0.2,1)"
+            >
+              <div class="carousel-slide" data-astro-cid-6ebw4llp>
+                <h3
+                  class="text-xl font-bold text-gray-900 mb-4 text-center"
+                  data-astro-cid-6ebw4llp
+                >
+                  Open Microwave
+                </h3>
+                <video
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                  class="w-full mx-auto rounded-lg shrunk-video"
+                  data-index="0"
+                  data-astro-cid-6ebw4llp
+                >
+                  <source
+                    src="articulation_tasks/0.mp4"
+                    type="video/mp4"
+                    data-astro-cid-6ebw4llp
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="carousel-slide" data-astro-cid-6ebw4llp>
+                <h3
+                  class="text-xl font-bold text-gray-900 mb-4 text-center"
+                  data-astro-cid-6ebw4llp
+                >
+                  Close Refrigerator
+                </h3>
+                <video
+                  loop
+                  muted
+                  playsinline
+                  class="w-full mx-auto rounded-lg shrunk-video"
+                  data-index="1"
+                  data-astro-cid-6ebw4llp
+                >
+                  <source
+                    src="articulation_tasks/1.mp4"
+                    type="video/mp4"
+                    data-astro-cid-6ebw4llp
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="carousel-slide" data-astro-cid-6ebw4llp>
+                <h3
+                  class="text-xl font-bold text-gray-900 mb-4 text-center"
+                  data-astro-cid-6ebw4llp
+                >
+                  Pull Out Drawer
+                </h3>
+                <video
+                  loop
+                  muted
+                  playsinline
+                  class="w-full mx-auto rounded-lg shrunk-video"
+                  data-index="2"
+                  data-astro-cid-6ebw4llp
+                >
+                  <source
+                    src="articulation_tasks/2.mp4"
+                    type="video/mp4"
+                    data-astro-cid-6ebw4llp
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="carousel-slide" data-astro-cid-6ebw4llp>
+                <h3
+                  class="text-xl font-bold text-gray-900 mb-4 text-center"
+                  data-astro-cid-6ebw4llp
+                >
+                  Open Cabinet
+                </h3>
+                <video
+                  loop
+                  muted
+                  playsinline
+                  class="w-full mx-auto rounded-lg shrunk-video"
+                  data-index="3"
+                  data-astro-cid-6ebw4llp
+                >
+                  <source
+                    src="articulation_tasks/3.mp4"
+                    type="video/mp4"
+                    data-astro-cid-6ebw4llp
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="carousel-slide" data-astro-cid-6ebw4llp>
+                <h3
+                  class="text-xl font-bold text-gray-900 mb-4 text-center"
+                  data-astro-cid-6ebw4llp
+                >
+                  Close Dishwasher
+                </h3>
+                <video
+                  loop
+                  muted
+                  playsinline
+                  class="w-full mx-auto rounded-lg shrunk-video"
+                  data-index="4"
+                  data-astro-cid-6ebw4llp
+                >
+                  <source
+                    src="articulation_tasks/4.mp4"
+                    type="video/mp4"
+                    data-astro-cid-6ebw4llp
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            <!-- Navigation Buttons -->
+            <button
+              class="carousel-nav prev"
+              id="prevBtn-articulation-tasks"
+              data-astro-cid-6ebw4llp
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                data-astro-cid-6ebw4llp
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                  data-astro-cid-6ebw4llp
+                ></path>
+              </svg>
+            </button>
+            <button
+              class="carousel-nav next"
+              id="nextBtn-articulation-tasks"
+              data-astro-cid-6ebw4llp
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                data-astro-cid-6ebw4llp
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                  data-astro-cid-6ebw4llp
+                ></path>
+              </svg>
+            </button>
+            <!-- Indicators -->
+            <div class="carousel-indicators" data-astro-cid-6ebw4llp>
+              <div
+                class="indicator active"
+                data-index="0"
+                data-astro-cid-6ebw4llp
+              ></div>
+              <div
+                class="indicator"
+                data-index="1"
+                data-astro-cid-6ebw4llp
+              ></div>
+              <div
+                class="indicator"
+                data-index="2"
+                data-astro-cid-6ebw4llp
+              ></div>
+              <div
+                class="indicator"
+                data-index="3"
+                data-astro-cid-6ebw4llp
+              ></div>
+              <div
+                class="indicator"
+                data-index="4"
+                data-astro-cid-6ebw4llp
+              ></div>
+            </div>
+          </div>
+          <script>
+            (function () {
+              const videos = [
+                {
+                  title: "Open Microwave",
+                  src: "articulation_tasks/0.mp4",
+                  autoplay: true,
+                },
+                {
+                  title: "Close Refrigerator",
+                  src: "articulation_tasks/1.mp4",
+                  autoplay: false,
+                },
+                {
+                  title: "Pull Out Drawer",
+                  src: "articulation_tasks/2.mp4",
+                  autoplay: false,
+                },
+                {
+                  title: "Open Cabinet",
+                  src: "articulation_tasks/3.mp4",
+                  autoplay: false,
+                },
+                {
+                  title: "Close Dishwasher",
+                  src: "articulation_tasks/4.mp4",
+                  autoplay: false,
+                },
+              ];
+              const carouselId = "articulation-tasks";
+
+              document.addEventListener("DOMContentLoaded", function () {
+                // Find the specific carousel container using the known ID
+                const container = document.getElementById(
+                  `videoCarousel-${carouselId}`,
+                );
+
+                if (!container) return;
+
+                const wrapper = document.getElementById(
+                  `carouselWrapper-${carouselId}`,
+                );
+                const prevBtn = document.getElementById(
+                  `prevBtn-${carouselId}`,
+                );
+                const nextBtn = document.getElementById(
+                  `nextBtn-${carouselId}`,
+                );
+                const indicators = container.querySelectorAll(".indicator");
+                const videoElements =
+                  container.querySelectorAll("video[data-index]");
+
+                let currentIndex = 0;
+                const totalSlides = videos.length;
+
+                function updateCarousel() {
+                  if (!wrapper) return;
+                  const translateX = -currentIndex * 100;
+                  wrapper.style.transform = `translateX(${translateX}%)`;
+
+                  // Update indicators
+                  indicators.forEach((indicator, index) => {
+                    indicator.classList.toggle(
+                      "active",
+                      index === currentIndex,
+                    );
+                  });
+
+                  // Update button states
+                  if (prevBtn) prevBtn.disabled = currentIndex === 0;
+                  if (nextBtn)
+                    nextBtn.disabled = currentIndex === totalSlides - 1;
+
+                  // Handle video playback
+                  videoElements.forEach((video, index) => {
+                    if (index === currentIndex) {
+                      video.currentTime = 0; // Reset to beginning
+                      video
+                        .play()
+                        .catch((e) => console.log("Video play failed:", e));
+                    } else {
+                      video.pause();
+                    }
+                  });
+                }
+
+                function goToSlide(index) {
+                  currentIndex = Math.max(0, Math.min(index, totalSlides - 1));
+                  updateCarousel();
+                }
+
+                // Navigation button events
+                if (prevBtn)
+                  prevBtn.addEventListener("click", () =>
+                    goToSlide(currentIndex - 1),
+                  );
+                if (nextBtn)
+                  nextBtn.addEventListener("click", () =>
+                    goToSlide(currentIndex + 1),
+                  );
+
+                // Indicator events
+                indicators.forEach((indicator, index) => {
+                  indicator.addEventListener("click", () => goToSlide(index));
+                });
+
+                // Initialize
+                updateCarousel();
+              });
+            })();
+          </script>
+
+          <!-- --------- 基础操作任务轮播 --------- -->
+          <div class="my-8"></div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">
+            Basic Tasks
+          </h3>
+          <div
+            class="carousel-container shrunk"
+            id="videoCarousel-basic-tasks"
+            data-astro-cid-6ebw4llp
+          >
+            <div
+              class="carousel-wrapper"
+              id="carouselWrapper-basic-tasks"
+              data-astro-cid-6ebw4llp
+            >
+              <div class="carousel-slide" data-astro-cid-6ebw4llp>
+                <h3
+                  class="text-xl font-bold text-gray-900 mb-4 text-center"
+                  data-astro-cid-6ebw4llp
+                >
+                  Basic Task 1
+                </h3>
+                <video
+                  loop
+                  muted
+                  playsinline
+                  class="w-full mx-auto rounded-lg shrunk-video"
+                  data-index="0"
+                  data-astro-cid-6ebw4llp
+                >
+                  <source
+                    src="basic_tasks/0.mp4"
+                    type="video/mp4"
+                    data-astro-cid-6ebw4llp
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="carousel-slide" data-astro-cid-6ebw4llp>
+                <h3
+                  class="text-xl font-bold text-gray-900 mb-4 text-center"
+                  data-astro-cid-6ebw4llp
+                >
+                  Basic Task 2
+                </h3>
+                <video
+                  loop
+                  muted
+                  playsinline
+                  class="w-full mx-auto rounded-lg shrunk-video"
+                  data-index="1"
+                  data-astro-cid-6ebw4llp
+                >
+                  <source
+                    src="basic_tasks/1.mp4"
+                    type="video/mp4"
+                    data-astro-cid-6ebw4llp
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="carousel-slide" data-astro-cid-6ebw4llp>
+                <h3
+                  class="text-xl font-bold text-gray-900 mb-4 text-center"
+                  data-astro-cid-6ebw4llp
+                >
+                  Basic Task 3
+                </h3>
+                <video
+                  loop
+                  muted
+                  playsinline
+                  class="w-full mx-auto rounded-lg shrunk-video"
+                  data-index="2"
+                  data-astro-cid-6ebw4llp
+                >
+                  <source
+                    src="basic_tasks/2.mp4"
+                    type="video/mp4"
+                    data-astro-cid-6ebw4llp
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="carousel-slide" data-astro-cid-6ebw4llp>
+                <h3
+                  class="text-xl font-bold text-gray-900 mb-4 text-center"
+                  data-astro-cid-6ebw4llp
+                >
+                  Basic Task 4
+                </h3>
+                <video
+                  loop
+                  muted
+                  playsinline
+                  class="w-full mx-auto rounded-lg shrunk-video"
+                  data-index="3"
+                  data-astro-cid-6ebw4llp
+                >
+                  <source
+                    src="basic_tasks/3.mp4"
+                    type="video/mp4"
+                    data-astro-cid-6ebw4llp
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="carousel-slide" data-astro-cid-6ebw4llp>
+                <h3
+                  class="text-xl font-bold text-gray-900 mb-4 text-center"
+                  data-astro-cid-6ebw4llp
+                >
+                  Basic Task 5
+                </h3>
+                <video
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                  class="w-full mx-auto rounded-lg shrunk-video"
+                  data-index="4"
+                  data-astro-cid-6ebw4llp
+                >
+                  <source
+                    src="basic_tasks/4.mp4"
+                    type="video/mp4"
+                    data-astro-cid-6ebw4llp
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            <!-- Navigation Buttons -->
+            <button
+              class="carousel-nav prev"
+              id="prevBtn-basic-tasks"
+              data-astro-cid-6ebw4llp
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                data-astro-cid-6ebw4llp
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                  data-astro-cid-6ebw4llp
+                ></path>
+              </svg>
+            </button>
+            <button
+              class="carousel-nav next"
+              id="nextBtn-basic-tasks"
+              data-astro-cid-6ebw4llp
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                data-astro-cid-6ebw4llp
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                  data-astro-cid-6ebw4llp
+                ></path>
+              </svg>
+            </button>
+            <!-- Indicators -->
+            <div class="carousel-indicators" data-astro-cid-6ebw4llp>
+              <div
+                class="indicator active"
+                data-index="0"
+                data-astro-cid-6ebw4llp
+              ></div>
+              <div
+                class="indicator"
+                data-index="1"
+                data-astro-cid-6ebw4llp
+              ></div>
+              <div
+                class="indicator"
+                data-index="2"
+                data-astro-cid-6ebw4llp
+              ></div>
+              <div
+                class="indicator"
+                data-index="3"
+                data-astro-cid-6ebw4llp
+              ></div>
+              <div
+                class="indicator"
+                data-index="4"
+                data-astro-cid-6ebw4llp
+              ></div>
+            </div>
+          </div>
+          <script>
+            (function () {
+              const videos = [
+                {
+                  title: "Basic Task 1",
+                  src: "basic_tasks/0.mp4",
+                  autoplay: false,
+                },
+                {
+                  title: "Basic Task 2",
+                  src: "basic_tasks/1.mp4",
+                  autoplay: false,
+                },
+                {
+                  title: "Basic Task 3",
+                  src: "basic_tasks/2.mp4",
+                  autoplay: false,
+                },
+                {
+                  title: "Basic Task 4",
+                  src: "basic_tasks/3.mp4",
+                  autoplay: false,
+                },
+                {
+                  title: "Basic Task 5",
+                  src: "basic_tasks/4.mp4",
+                  autoplay: true,
+                },
+              ];
+              const carouselId = "basic-tasks";
+
+              document.addEventListener("DOMContentLoaded", function () {
+                // Find the specific carousel container using the known ID
+                const container = document.getElementById(
+                  `videoCarousel-${carouselId}`,
+                );
+
+                if (!container) return;
+
+                const wrapper = document.getElementById(
+                  `carouselWrapper-${carouselId}`,
+                );
+                const prevBtn = document.getElementById(
+                  `prevBtn-${carouselId}`,
+                );
+                const nextBtn = document.getElementById(
+                  `nextBtn-${carouselId}`,
+                );
+                const indicators = container.querySelectorAll(".indicator");
+                const videoElements =
+                  container.querySelectorAll("video[data-index]");
+
+                let currentIndex = 0;
+                const totalSlides = videos.length;
+
+                function updateCarousel() {
+                  if (!wrapper) return;
+                  const translateX = -currentIndex * 100;
+                  wrapper.style.transform = `translateX(${translateX}%)`;
+
+                  // Update indicators
+                  indicators.forEach((indicator, index) => {
+                    indicator.classList.toggle(
+                      "active",
+                      index === currentIndex,
+                    );
+                  });
+
+                  // Update button states
+                  if (prevBtn) prevBtn.disabled = currentIndex === 0;
+                  if (nextBtn)
+                    nextBtn.disabled = currentIndex === totalSlides - 1;
+
+                  // Handle video playback
+                  videoElements.forEach((video, index) => {
+                    if (index === currentIndex) {
+                      video.currentTime = 0; // Reset to beginning
+                      video
+                        .play()
+                        .catch((e) => console.log("Video play failed:", e));
+                    } else {
+                      video.pause();
+                    }
+                  });
+                }
+
+                function goToSlide(index) {
+                  currentIndex = Math.max(0, Math.min(index, totalSlides - 1));
+                  updateCarousel();
+                }
+
+                // Navigation button events
+                if (prevBtn)
+                  prevBtn.addEventListener("click", () =>
+                    goToSlide(currentIndex - 1),
+                  );
+                if (nextBtn)
+                  nextBtn.addEventListener("click", () =>
+                    goToSlide(currentIndex + 1),
+                  );
+
+                // Indicator events
+                indicators.forEach((indicator, index) => {
+                  indicator.addEventListener("click", () => goToSlide(index));
+                });
+
+                // Initialize
+                updateCarousel();
+              });
+            })();
+          </script>
+          <!-- 新增 long_horizon_tasks 轮播 -->
+          <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center mt-10">
+            Long-horizon Tasks
+          </h3>
+          <div
+            class="carousel-container shrunk"
+            id="videoCarousel-long-horizon-tasks"
+            data-astro-cid-6ebw4llp
+          >
+            <div
+              class="carousel-wrapper"
+              id="carouselWrapper-long-horizon-tasks"
+              data-astro-cid-6ebw4llp
+            >
+              <div class="carousel-slide" data-astro-cid-6ebw4llp>
+                <h3 class="text-xl font-bold text-gray-900 mb-4 text-center" data-astro-cid-6ebw4llp>
+                  Video 0
+                </h3>
+                <video
+                  loop
+                  muted
+                  playsinline
+                  class="w-full mx-auto rounded-lg shrunk-video"
+                  data-index="0"
+                  data-astro-cid-6ebw4llp
+                >
+                  <source
+                    src="long_horizon_tasks/0.mp4"
+                    type="video/mp4"
+                    data-astro-cid-6ebw4llp
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="carousel-slide" data-astro-cid-6ebw4llp>
+                <h3 class="text-xl font-bold text-gray-900 mb-4 text-center" data-astro-cid-6ebw4llp>
+                  Video 1
+                </h3>
+                <video
+                  loop
+                  muted
+                  playsinline
+                  class="w-full mx-auto rounded-lg shrunk-video"
+                  data-index="1"
+                  data-astro-cid-6ebw4llp
+                >
+                  <source
+                    src="long_horizon_tasks/1.mp4"
+                    type="video/mp4"
+                    data-astro-cid-6ebw4llp
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="carousel-slide" data-astro-cid-6ebw4llp>
+                <h3 class="text-xl font-bold text-gray-900 mb-4 text-center" data-astro-cid-6ebw4llp>
+                  Video 2
+                </h3>
+                <video
+                  loop
+                  muted
+                  playsinline
+                  class="w-full mx-auto rounded-lg shrunk-video"
+                  data-index="2"
+                  data-astro-cid-6ebw4llp
+                >
+                  <source
+                    src="long_horizon_tasks/2.mp4"
+                    type="video/mp4"
+                    data-astro-cid-6ebw4llp
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="carousel-slide" data-astro-cid-6ebw4llp>
+                <h3 class="text-xl font-bold text-gray-900 mb-4 text-center" data-astro-cid-6ebw4llp>
+                  Video 3
+                </h3>
+                <video
+                  loop
+                  muted
+                  playsinline
+                  class="w-full mx-auto rounded-lg shrunk-video"
+                  data-index="3"
+                  data-astro-cid-6ebw4llp
+                >
+                  <source
+                    src="long_horizon_tasks/3.mp4"
+                    type="video/mp4"
+                    data-astro-cid-6ebw4llp
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="carousel-slide" data-astro-cid-6ebw4llp>
+                <h3 class="text-xl font-bold text-gray-900 mb-4 text-center" data-astro-cid-6ebw4llp>
+                  Video 4
+                </h3>
+                <video
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                  class="w-full mx-auto rounded-lg shrunk-video"
+                  data-index="4"
+                  data-astro-cid-6ebw4llp
+                >
+                  <source
+                    src="long_horizon_tasks/4.mp4"
+                    type="video/mp4"
+                    data-astro-cid-6ebw4llp
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            <!-- Navigation Buttons -->
+            <button
+              class="carousel-nav prev"
+              id="prevBtn-long-horizon-tasks"
+              data-astro-cid-6ebw4llp
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                data-astro-cid-6ebw4llp
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                  data-astro-cid-6ebw4llp
+                ></path>
+              </svg>
+            </button>
+            <button
+              class="carousel-nav next"
+              id="nextBtn-long-horizon-tasks"
+              data-astro-cid-6ebw4llp
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                data-astro-cid-6ebw4llp
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                  data-astro-cid-6ebw4llp
+                ></path>
+              </svg>
+            </button>
+            <!-- Indicators -->
+            <div class="carousel-indicators" data-astro-cid-6ebw4llp>
+              <div
+                class="indicator active"
+                data-index="0"
+                data-astro-cid-6ebw4llp
+              ></div>
+              <div
+                class="indicator"
+                data-index="1"
+                data-astro-cid-6ebw4llp
+              ></div>
+              <div
+                class="indicator"
+                data-index="2"
+                data-astro-cid-6ebw4llp
+              ></div>
+              <div
+                class="indicator"
+                data-index="3"
+                data-astro-cid-6ebw4llp
+              ></div>
+              <div
+                class="indicator"
+                data-index="4"
+                data-astro-cid-6ebw4llp
+              ></div>
+            </div>
+          </div>
+          <script>
+            (function () {
+              const videos = [
+                {
+                  title: "Video 0",
+                  src: "long_horizon_tasks/0.mp4",
+                  autoplay: false,
+                },
+                {
+                  title: "Video 1",
+                  src: "long_horizon_tasks/1.mp4",
+                  autoplay: false,
+                },
+                {
+                  title: "Video 2",
+                  src: "long_horizon_tasks/2.mp4",
+                  autoplay: false,
+                },
+                {
+                  title: "Video 3",
+                  src: "long_horizon_tasks/3.mp4",
+                  autoplay: false,
+                },
+                {
+                  title: "Video 4",
+                  src: "long_horizon_tasks/4.mp4",
+                  autoplay: true,
+                },
+              ];
+              const carouselId = "long-horizon-tasks";
+
+              document.addEventListener("DOMContentLoaded", function () {
+                // Find the specific carousel container using the known ID
+                const container = document.getElementById(
+                  `videoCarousel-${carouselId}`,
+                );
+                if (!container) return;
+
+                const wrapper = document.getElementById(
+                  `carouselWrapper-${carouselId}`,
+                );
+                const prevBtn = document.getElementById(
+                  `prevBtn-${carouselId}`,
+                );
+                const nextBtn = document.getElementById(
+                  `nextBtn-${carouselId}`,
+                );
+                const indicators = container.querySelectorAll(".indicator");
+                const videoElements =
+                  container.querySelectorAll("video[data-index]");
+
+                let currentIndex = 0;
+                const totalSlides = videos.length;
+
+                function updateCarousel() {
+                  if (!wrapper) return;
+                  const translateX = -currentIndex * 100;
+                  wrapper.style.transform = `translateX(${translateX}%)`;
+
+                  // Update indicators
+                  indicators.forEach((indicator, index) => {
+                    indicator.classList.toggle(
+                      "active",
+                      index === currentIndex,
+                    );
+                  });
+
+                  // Update button states
+                  if (prevBtn) prevBtn.disabled = currentIndex === 0;
+                  if (nextBtn)
+                    nextBtn.disabled = currentIndex === totalSlides - 1;
+
+                  // Handle video playback
+                  videoElements.forEach((video, index) => {
+                    if (index === currentIndex) {
+                      video.currentTime = 0; // Reset to beginning
+                      video
+                        .play()
+                        .catch((e) => console.log("Video play failed:", e));
+                    } else {
+                      video.pause();
+                    }
+                  });
+                }
+
+                function goToSlide(index) {
+                  currentIndex = Math.max(0, Math.min(index, totalSlides - 1));
+                  updateCarousel();
+                }
+
+                // Navigation button events
+                if (prevBtn)
+                  prevBtn.addEventListener("click", () =>
+                    goToSlide(currentIndex - 1),
+                  );
+                if (nextBtn)
+                  nextBtn.addEventListener("click", () =>
+                    goToSlide(currentIndex + 1),
+                  );
+
+                // Indicator events
+                indicators.forEach((indicator, index) => {
+                  indicator.addEventListener("click", () => goToSlide(index));
+                });
+
+                // Initialize
+                updateCarousel();
+              });
+            })();
+          </script>
+
+          <!-- 新增 Pick and Place Tasks 轮播板块 -->
+          <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center mt-10">
+            Pick and Place Tasks
+          </h3>
+          <div
+            class="carousel-container shrunk"
+            id="videoCarousel-carousel-pickandplace"
+            data-astro-cid-6ebw4llp
+          >
+            <div
+              class="carousel-wrapper"
+              id="carouselWrapper-carousel-pickandplace"
+              data-astro-cid-6ebw4llp
+            >
+              <div class="carousel-slide" data-astro-cid-6ebw4llp>
+                <h3 class="text-xl font-bold text-gray-900 mb-4 text-center" data-astro-cid-6ebw4llp>
+                  0
+                </h3>
+                <video
+                  loop
+                  muted
+                  playsinline
+                  class="w-full mx-auto rounded-lg shrunk-video"
+                  data-index="0"
+                  data-astro-cid-6ebw4llp
+                >
+                  <source
+                    src="pick_and_place_tasks/0.mp4"
+                    type="video/mp4"
+                    data-astro-cid-6ebw4llp
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="carousel-slide" data-astro-cid-6ebw4llp>
+                <h3 class="text-xl font-bold text-gray-900 mb-4 text-center" data-astro-cid-6ebw4llp>
+                  1
+                </h3>
+                <video
+                  loop
+                  muted
+                  playsinline
+                  class="w-full mx-auto rounded-lg shrunk-video"
+                  data-index="1"
+                  data-astro-cid-6ebw4llp
+                >
+                  <source
+                    src="pick_and_place_tasks/1.mp4"
+                    type="video/mp4"
+                    data-astro-cid-6ebw4llp
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="carousel-slide" data-astro-cid-6ebw4llp>
+                <h3 class="text-xl font-bold text-gray-900 mb-4 text-center" data-astro-cid-6ebw4llp>
+                  2
+                </h3>
+                <video
+                  loop
+                  muted
+                  playsinline
+                  class="w-full mx-auto rounded-lg shrunk-video"
+                  data-index="2"
+                  data-astro-cid-6ebw4llp
+                >
+                  <source
+                    src="pick_and_place_tasks/2.mp4"
+                    type="video/mp4"
+                    data-astro-cid-6ebw4llp
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="carousel-slide" data-astro-cid-6ebw4llp>
+                <h3 class="text-xl font-bold text-gray-900 mb-4 text-center" data-astro-cid-6ebw4llp>
+                  3
+                </h3>
+                <video
+                  loop
+                  muted
+                  playsinline
+                  class="w-full mx-auto rounded-lg shrunk-video"
+                  data-index="3"
+                  data-astro-cid-6ebw4llp
+                >
+                  <source
+                    src="pick_and_place_tasks/3.mp4"
+                    type="video/mp4"
+                    data-astro-cid-6ebw4llp
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="carousel-slide" data-astro-cid-6ebw4llp>
+                <h3 class="text-xl font-bold text-gray-900 mb-4 text-center" data-astro-cid-6ebw4llp>
+                  4
+                </h3>
+                <video
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                  class="w-full mx-auto rounded-lg shrunk-video"
+                  data-index="4"
+                  data-astro-cid-6ebw4llp
+                >
+                  <source
+                    src="pick_and_place_tasks/4.mp4"
+                    type="video/mp4"
+                    data-astro-cid-6ebw4llp
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            <!-- Navigation Buttons -->
+            <button
+              class="carousel-nav prev"
+              id="prevBtn-carousel-pickandplace"
+              data-astro-cid-6ebw4llp
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                data-astro-cid-6ebw4llp
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                  data-astro-cid-6ebw4llp
+                ></path>
+              </svg>
+            </button>
+            <button
+              class="carousel-nav next"
+              id="nextBtn-carousel-pickandplace"
+              data-astro-cid-6ebw4llp
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                data-astro-cid-6ebw4llp
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                  data-astro-cid-6ebw4llp
+                ></path>
+              </svg>
+            </button>
+            <!-- Indicators -->
+            <div class="carousel-indicators" data-astro-cid-6ebw4llp>
+              <div
+                class="indicator active"
+                data-index="0"
+                data-astro-cid-6ebw4llp
+              ></div>
+              <div
+                class="indicator"
+                data-index="1"
+                data-astro-cid-6ebw4llp
+              ></div>
+              <div
+                class="indicator"
+                data-index="2"
+                data-astro-cid-6ebw4llp
+              ></div>
+              <div
+                class="indicator"
+                data-index="3"
+                data-astro-cid-6ebw4llp
+              ></div>
+              <div
+                class="indicator"
+                data-index="4"
+                data-astro-cid-6ebw4llp
+              ></div>
+            </div>
+          </div>
+          <script>
+            (function () {
+              const videos = [
+                {
+                  title: "0",
+                  src: "pick_and_place_tasks/0.mp4",
+                  autoplay: false,
+                },
+                {
+                  title: "1",
+                  src: "pick_and_place_tasks/1.mp4",
+                  autoplay: false,
+                },
+                {
+                  title: "2",
+                  src: "pick_and_place_tasks/2.mp4",
+                  autoplay: false,
+                },
+                {
+                  title: "3",
+                  src: "pick_and_place_tasks/3.mp4",
+                  autoplay: false,
+                },
+                {
+                  title: "4",
+                  src: "pick_and_place_tasks/4.mp4",
+                  autoplay: true,
+                },
+              ];
+              const carouselId = "carousel-pickandplace";
+
+              document.addEventListener("DOMContentLoaded", function () {
+                const container = document.getElementById(
+                  `videoCarousel-${carouselId}`,
+                );
+
+                if (!container) return;
+
+                const wrapper = document.getElementById(
+                  `carouselWrapper-${carouselId}`,
+                );
+                const prevBtn = document.getElementById(
+                  `prevBtn-${carouselId}`,
+                );
+                const nextBtn = document.getElementById(
+                  `nextBtn-${carouselId}`,
+                );
+                const indicators = container.querySelectorAll(".indicator");
+                const videoElements =
+                  container.querySelectorAll("video[data-index]");
+
+                let currentIndex = 0;
+                const totalSlides = videos.length;
+
+                function updateCarousel() {
+                  if (!wrapper) return;
+                  const translateX = -currentIndex * 100;
+                  wrapper.style.transform = `translateX(${translateX}%)`;
+
+                  // Update indicators
+                  indicators.forEach((indicator, index) => {
+                    indicator.classList.toggle(
+                      "active",
+                      index === currentIndex,
+                    );
+                  });
+
+                  // Update button states
+                  if (prevBtn) prevBtn.disabled = currentIndex === 0;
+                  if (nextBtn)
+                    nextBtn.disabled = currentIndex === totalSlides - 1;
+
+                  // Handle video playback
+                  videoElements.forEach((video, index) => {
+                    if (index === currentIndex) {
+                      // Play current video
+                      video.currentTime = 0; // Reset to beginning
+                      video
+                        .play()
+                        .catch((e) => console.log("Video play failed:", e));
+                    } else {
+                      video.pause();
+                    }
+                  });
+                }
+
+                function goToSlide(index) {
+                  currentIndex = Math.max(0, Math.min(index, totalSlides - 1));
+                  updateCarousel();
+                }
+
+                // Navigation button events
+                if (prevBtn)
+                  prevBtn.addEventListener("click", () =>
+                    goToSlide(currentIndex - 1),
+                  );
+                if (nextBtn)
+                  nextBtn.addEventListener("click", () =>
+                    goToSlide(currentIndex + 1),
+                  );
+
+                // Indicator events
+                indicators.forEach((indicator, index) => {
+                  indicator.addEventListener("click", () => goToSlide(index));
+                });
+
+                // Initialize
+                updateCarousel();
+              });
+            })();
+          </script>
+
+          <!-- #################################################################################### -->
+           
+
+        </section>
+
+      <!-- Teams -->
+      <section
+      class="bg-white rounded-lg shadow-sm p-6 mb-6 max-w-6xl mx-auto"
+      >
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+        Team
+      </h2>
+      <style>
+        /* 保证头像尺寸一致，可能会被scoped打破，但这里嵌入即可 */
+        .team-photo-fixed {
+          width: 96px;
+          height: 96px;
+          object-fit: cover;
+          object-position: center;
+          border-radius: 9999px;
+          box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+          background: #f3f4f6;
+          display: block;
+        }
+      </style>
+      <div class="flex flex-row justify-center items-start gap-8">
+        <!-- Person 0 -->
+        <div class="flex flex-col items-center w-32">
+          <img src="head/0.jpg" alt="Person 0" class="team-photo-fixed mb-2" />
+          <div class="text-center text-lg font-medium">Person 0</div>
+        </div>
+        <!-- Person 1 -->
+        <div class="flex flex-col items-center w-32">
+          <img src="head/1.jpg" alt="Person 1" class="team-photo-fixed mb-2" />
+          <div class="text-center text-lg font-medium">Person 1</div>
+        </div>
+        <!-- Person 2 -->
+        <div class="flex flex-col items-center w-32">
+          <img src="head/2.jpg" alt="Person 2" class="team-photo-fixed mb-2" />
+          <div class="text-center text-lg font-medium">Person 2</div>
+        </div>
+        <!-- Person 3 -->
+        <div class="flex flex-col items-center w-32">
+          <img src="head/3.jpg" alt="Person 3" class="team-photo-fixed mb-2" />
+          <div class="text-center text-lg font-medium">Person 3</div>
+        </div>
+        <!-- Person 4 -->
+        <div class="flex flex-col items-center w-32">
+          <img src="head/4.jpg" alt="Person 4" class="team-photo-fixed mb-2" />
+          <div class="text-center text-lg font-medium">Person 4</div>
+        </div>
+      </div>
+    </section>
+
+    </section>
+    <!-- Results Section -->
+    <section class="py-8">
+      <!-- Large-scale Pick and Place in GenManip -->
+      <!-- Cluster Pick and Place -->
+      <!-- Reasoning -->
+      <div class="max-w-6xl mx-auto px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+          Experimental Results
+        </h2>
+        <p class="text-gray-600 text-center mb-8 text-lg">
+          InternData-M1 demonstrates superior performance across various
+          challenging scenarios
+        </p>
+        <div
+          class="bar-chart-container bg-white rounded-lg shadow-sm p-6 mb-6 max-w-6xl mx-auto"
+          data-astro-cid-iuwqtkks
+        >
+          <h3
+            class="text-xl font-bold text-gray-900 mb-4 text-center"
+            data-astro-cid-iuwqtkks
+          >
+            Performance Comparison on Simpler Env and Libero Benchmark
+          </h3>
+          <div
+            class="chart-wrapper"
+            style="width: 100%; height: 400px"
+            data-astro-cid-iuwqtkks
+          >
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 800 400"
+              class="chart-svg"
+              data-astro-cid-iuwqtkks
+            >
+              <!-- Y-axis -->
+              <line
+                x1="80"
+                y1="50"
+                x2="80"
+                y2="320"
+                stroke="#e5e7eb"
+                stroke-width="1"
+                data-astro-cid-iuwqtkks
+              ></line>
+              <!-- X-axis -->
+              <line
+                x1="80"
+                y1="320"
+                x2="720"
+                y2="320"
+                stroke="#e5e7eb"
+                stroke-width="1"
+                data-astro-cid-iuwqtkks
+              ></line>
+              <!-- Y-axis labels -->
+              <g data-astro-cid-iuwqtkks>
+                <line
+                  x1="75"
+                  y1="320"
+                  x2="80"
+                  y2="320"
+                  stroke="#9ca3af"
+                  stroke-width="1"
+                  data-astro-cid-iuwqtkks
+                ></line>
+                <text
+                  x="70"
+                  y="325"
+                  text-anchor="end"
+                  class="axis-label"
+                  data-astro-cid-iuwqtkks
+                >
+                  0
+                </text>
+              </g>
+              <g data-astro-cid-iuwqtkks>
+                <line
+                  x1="75"
+                  y1="252.5"
+                  x2="80"
+                  y2="252.5"
+                  stroke="#9ca3af"
+                  stroke-width="1"
+                  data-astro-cid-iuwqtkks
+                ></line>
+                <text
+                  x="70"
+                  y="257.5"
+                  text-anchor="end"
+                  class="axis-label"
+                  data-astro-cid-iuwqtkks
+                >
+                  20
+                </text>
+              </g>
+              <g data-astro-cid-iuwqtkks>
+                <line
+                  x1="75"
+                  y1="185"
+                  x2="80"
+                  y2="185"
+                  stroke="#9ca3af"
+                  stroke-width="1"
+                  data-astro-cid-iuwqtkks
+                ></line>
+                <text
+                  x="70"
+                  y="190"
+                  text-anchor="end"
+                  class="axis-label"
+                  data-astro-cid-iuwqtkks
+                >
+                  40
+                </text>
+              </g>
+              <g data-astro-cid-iuwqtkks>
+                <line
+                  x1="75"
+                  y1="117.5"
+                  x2="80"
+                  y2="117.5"
+                  stroke="#9ca3af"
+                  stroke-width="1"
+                  data-astro-cid-iuwqtkks
+                ></line>
+                <text
+                  x="70"
+                  y="122.5"
+                  text-anchor="end"
+                  class="axis-label"
+                  data-astro-cid-iuwqtkks
+                >
+                  60
+                </text>
+              </g>
+              <g data-astro-cid-iuwqtkks>
+                <line
+                  x1="75"
+                  y1="50"
+                  x2="80"
+                  y2="50"
+                  stroke="#9ca3af"
+                  stroke-width="1"
+                  data-astro-cid-iuwqtkks
+                ></line>
+                <text
+                  x="70"
+                  y="55"
+                  text-anchor="end"
+                  class="axis-label"
+                  data-astro-cid-iuwqtkks
+                >
+                  80
+                </text>
+              </g>
+              <!-- Y-axis title -->
+              <text
+                x="25"
+                y="185"
+                text-anchor="middle"
+                transform="rotate(-90, 25, 185)"
+                class="axis-label"
+                data-astro-cid-iuwqtkks
+              >
+                Success Rate (%)
+              </text>
+              <!-- Bars and labels -->
+              <g data-astro-cid-iuwqtkks>
+                <!-- Category label -->
+                <text
+                  x="175"
+                  y="345"
+                  text-anchor="middle"
+                  class="category-label"
+                  data-astro-cid-iuwqtkks
+                >
+                  Google Robot VM
+                </text>
+                <!-- Bars for this category -->
+                <g data-astro-cid-iuwqtkks>
+                  <!-- Bar -->
+                  <path
+                    d="M 110 320 L 110 237.90615224191868 Q 110 229.90615224191868 118 229.90615224191868 L 134.66666666666666 229.90615224191868 Q 142.66666666666666 229.90615224191868 142.66666666666666 237.90615224191868 L 142.66666666666666 320 Z"
+                    fill="#e2e8f0"
+                    class="bar"
+                    data-category="0"
+                    data-series="0"
+                    data-astro-cid-iuwqtkks
+                  ></path>
+                  <!-- Value label -->
+                  <text
+                    x="126.33333333333333"
+                    y="221.90615224191868"
+                    text-anchor="middle"
+                    class="value-label"
+                    fill="#374151"
+                    font-size="12"
+                    font-weight="600"
+                    data-category="0"
+                    data-series="0"
+                    data-astro-cid-iuwqtkks
+                  >
+                    35.2
+                  </text>
+                </g>
+                <g data-astro-cid-iuwqtkks>
+                  <!-- Bar -->
+                  <path
+                    d="M 146.66666666666666 320 L 146.66666666666666 177.50232249502324 Q 146.66666666666666 169.50232249502324 154.66666666666666 169.50232249502324 L 171.33333333333331 169.50232249502324 Q 179.33333333333331 169.50232249502324 179.33333333333331 177.50232249502324 L 179.33333333333331 320 Z"
+                    fill="#94a3b8"
+                    class="bar"
+                    data-category="0"
+                    data-series="1"
+                    data-astro-cid-iuwqtkks
+                  ></path>
+                  <!-- Value label -->
+                  <text
+                    x="163"
+                    y="161.50232249502324"
+                    text-anchor="middle"
+                    class="value-label"
+                    fill="#374151"
+                    font-size="12"
+                    font-weight="600"
+                    data-category="0"
+                    data-series="1"
+                    data-astro-cid-iuwqtkks
+                  >
+                    58.8
+                  </text>
+                </g>
+                <g data-astro-cid-iuwqtkks>
+                  <!-- Bar -->
+                  <path
+                    d="M 183.33333333333331 320 L 183.33333333333331 121.44961607735331 Q 183.33333333333331 113.44961607735331 191.33333333333331 113.44961607735331 L 207.99999999999997 113.44961607735331 Q 215.99999999999997 113.44961607735331 215.99999999999997 121.44961607735331 L 215.99999999999997 320 Z"
+                    fill="#475569"
+                    class="bar"
+                    data-category="0"
+                    data-series="2"
+                    data-astro-cid-iuwqtkks
+                  ></path>
+                  <!-- Value label -->
+                  <text
+                    x="199.66666666666666"
+                    y="105.44961607735331"
+                    text-anchor="middle"
+                    class="value-label"
+                    fill="#374151"
+                    font-size="12"
+                    font-weight="600"
+                    data-category="0"
+                    data-series="2"
+                    data-astro-cid-iuwqtkks
+                  >
+                    80.7
+                  </text>
+                </g>
+              </g>
+              <g data-astro-cid-iuwqtkks>
+                <!-- Category label -->
+                <text
+                  x="325"
+                  y="345"
+                  text-anchor="middle"
+                  class="category-label"
+                  data-astro-cid-iuwqtkks
+                >
+                  Google Robot VA
+                </text>
+                <!-- Bars for this category -->
+                <g data-astro-cid-iuwqtkks>
+                  <!-- Bar -->
+                  <path
+                    d="M 260 320 L 260 214.10294814674376 Q 260 206.10294814674376 268 206.10294814674376 L 284.6666666666667 206.10294814674376 Q 292.6666666666667 206.10294814674376 292.6666666666667 214.10294814674376 L 292.6666666666667 320 Z"
+                    fill="#e2e8f0"
+                    class="bar"
+                    data-category="1"
+                    data-series="0"
+                    data-astro-cid-iuwqtkks
+                  ></path>
+                  <!-- Value label -->
+                  <text
+                    x="276.3333333333333"
+                    y="198.10294814674376"
+                    text-anchor="middle"
+                    class="value-label"
+                    fill="#374151"
+                    font-size="12"
+                    font-weight="600"
+                    data-category="1"
+                    data-series="0"
+                    data-astro-cid-iuwqtkks
+                  >
+                    44.5
+                  </text>
+                </g>
+                <g data-astro-cid-iuwqtkks>
+                  <!-- Bar -->
+                  <path
+                    d="M 296.6666666666667 320 L 296.6666666666667 187.74025974025975 Q 296.6666666666667 179.74025974025975 304.6666666666667 179.74025974025975 L 321.33333333333337 179.74025974025975 Q 329.33333333333337 179.74025974025975 329.33333333333337 187.74025974025975 L 329.33333333333337 320 Z"
+                    fill="#94a3b8"
+                    class="bar"
+                    data-category="1"
+                    data-series="1"
+                    data-astro-cid-iuwqtkks
+                  ></path>
+                  <!-- Value label -->
+                  <text
+                    x="313"
+                    y="171.74025974025975"
+                    text-anchor="middle"
+                    class="value-label"
+                    fill="#374151"
+                    font-size="12"
+                    font-weight="600"
+                    data-category="1"
+                    data-series="1"
+                    data-astro-cid-iuwqtkks
+                  >
+                    54.8
+                  </text>
+                </g>
+                <g data-astro-cid-iuwqtkks>
+                  <!-- Bar -->
+                  <path
+                    d="M 333.3333333333333 320 L 333.3333333333333 133.47919234050622 Q 333.3333333333333 125.47919234050622 341.3333333333333 125.47919234050622 L 358 125.47919234050622 Q 366 125.47919234050622 366 133.47919234050622 L 366 320 Z"
+                    fill="#475569"
+                    class="bar"
+                    data-category="1"
+                    data-series="2"
+                    data-astro-cid-iuwqtkks
+                  ></path>
+                  <!-- Value label -->
+                  <text
+                    x="349.66666666666663"
+                    y="117.47919234050622"
+                    text-anchor="middle"
+                    class="value-label"
+                    fill="#374151"
+                    font-size="12"
+                    font-weight="600"
+                    data-category="1"
+                    data-series="2"
+                    data-astro-cid-iuwqtkks
+                  >
+                    76
+                  </text>
+                </g>
+              </g>
+              <g data-astro-cid-iuwqtkks>
+                <!-- Category label -->
+                <text
+                  x="475"
+                  y="345"
+                  text-anchor="middle"
+                  class="category-label"
+                  data-astro-cid-iuwqtkks
+                >
+                  WidowX VM
+                </text>
+                <!-- Bars for this category -->
+                <g data-astro-cid-iuwqtkks>
+                  <!-- Bar -->
+                  <path
+                    d="M 410 320 L 410 169.56792112996493 Q 410 161.56792112996493 418 161.56792112996493 L 434.6666666666667 161.56792112996493 Q 442.6666666666667 161.56792112996493 442.6666666666667 169.56792112996493 L 442.6666666666667 320 Z"
+                    fill="#e2e8f0"
+                    class="bar"
+                    data-category="2"
+                    data-series="0"
+                    data-astro-cid-iuwqtkks
+                  ></path>
+                  <!-- Value label -->
+                  <text
+                    x="426.3333333333333"
+                    y="153.56792112996493"
+                    text-anchor="middle"
+                    class="value-label"
+                    fill="#374151"
+                    font-size="12"
+                    font-weight="600"
+                    data-category="2"
+                    data-series="0"
+                    data-astro-cid-iuwqtkks
+                  >
+                    61.9
+                  </text>
+                </g>
+                <g data-astro-cid-iuwqtkks>
+                  <!-- Bar -->
+                  <path
+                    d="M 446.6666666666667 320 L 446.6666666666667 258.6379751635226 Q 446.6666666666667 250.6379751635226 454.6666666666667 250.6379751635226 L 471.33333333333337 250.6379751635226 Q 479.33333333333337 250.6379751635226 479.33333333333337 258.6379751635226 L 479.33333333333337 320 Z"
+                    fill="#94a3b8"
+                    class="bar"
+                    data-category="2"
+                    data-series="1"
+                    data-astro-cid-iuwqtkks
+                  ></path>
+                  <!-- Value label -->
+                  <text
+                    x="463"
+                    y="242.6379751635226"
+                    text-anchor="middle"
+                    class="value-label"
+                    fill="#374151"
+                    font-size="12"
+                    font-weight="600"
+                    data-category="2"
+                    data-series="1"
+                    data-astro-cid-iuwqtkks
+                  >
+                    27.1
+                  </text>
+                </g>
+                <g data-astro-cid-iuwqtkks>
+                  <!-- Bar -->
+                  <path
+                    d="M 483.3333333333333 320 L 483.3333333333333 144.48497487913548 Q 483.3333333333333 136.48497487913548 491.3333333333333 136.48497487913548 L 508 136.48497487913548 Q 516 136.48497487913548 516 144.48497487913548 L 516 320 Z"
+                    fill="#475569"
+                    class="bar"
+                    data-category="2"
+                    data-series="2"
+                    data-astro-cid-iuwqtkks
+                  ></path>
+                  <!-- Value label -->
+                  <text
+                    x="499.66666666666663"
+                    y="128.48497487913548"
+                    text-anchor="middle"
+                    class="value-label"
+                    fill="#374151"
+                    font-size="12"
+                    font-weight="600"
+                    data-category="2"
+                    data-series="2"
+                    data-astro-cid-iuwqtkks
+                  >
+                    71.7
+                  </text>
+                </g>
+              </g>
+              <g data-astro-cid-iuwqtkks>
+                <!-- Category label -->
+                <text
+                  x="625"
+                  y="345"
+                  text-anchor="middle"
+                  class="category-label"
+                  data-astro-cid-iuwqtkks
+                >
+                  Libero
+                </text>
+                <!-- Bars for this category -->
+                <g data-astro-cid-iuwqtkks>
+                  <!-- Bar -->
+                  <path
+                    d="M 560 320 L 560 87.6644231680728 Q 560 79.6644231680728 568 79.6644231680728 L 584.6666666666666 79.6644231680728 Q 592.6666666666666 79.6644231680728 592.6666666666666 87.6644231680728 L 592.6666666666666 320 Z"
+                    fill="#e2e8f0"
+                    class="bar"
+                    data-category="3"
+                    data-series="0"
+                    data-astro-cid-iuwqtkks
+                  ></path>
+                  <!-- Value label -->
+                  <text
+                    x="576.3333333333334"
+                    y="71.6644231680728"
+                    text-anchor="middle"
+                    class="value-label"
+                    fill="#374151"
+                    font-size="12"
+                    font-weight="600"
+                    data-category="3"
+                    data-series="0"
+                    data-astro-cid-iuwqtkks
+                  >
+                    93.9
+                  </text>
+                </g>
+                <g data-astro-cid-iuwqtkks>
+                  <!-- Bar -->
+                  <path
+                    d="M 596.6666666666666 320 L 596.6666666666666 86.89657787468008 Q 596.6666666666666 78.89657787468008 604.6666666666666 78.89657787468008 L 621.3333333333333 78.89657787468008 Q 629.3333333333333 78.89657787468008 629.3333333333333 86.89657787468008 L 629.3333333333333 320 Z"
+                    fill="#94a3b8"
+                    class="bar"
+                    data-category="3"
+                    data-series="1"
+                    data-astro-cid-iuwqtkks
+                  ></path>
+                  <!-- Value label -->
+                  <text
+                    x="613"
+                    y="70.89657787468008"
+                    text-anchor="middle"
+                    class="value-label"
+                    fill="#374151"
+                    font-size="12"
+                    font-weight="600"
+                    data-category="3"
+                    data-series="1"
+                    data-astro-cid-iuwqtkks
+                  >
+                    94.2
+                  </text>
+                </g>
+                <g data-astro-cid-iuwqtkks>
+                  <!-- Bar -->
+                  <path
+                    d="M 633.3333333333334 320 L 633.3333333333334 82.54545454545456 Q 633.3333333333334 74.54545454545456 641.3333333333334 74.54545454545456 L 658 74.54545454545456 Q 666 74.54545454545456 666 82.54545454545456 L 666 320 Z"
+                    fill="#475569"
+                    class="bar"
+                    data-category="3"
+                    data-series="2"
+                    data-astro-cid-iuwqtkks
+                  ></path>
+                  <!-- Value label -->
+                  <text
+                    x="649.6666666666667"
+                    y="66.54545454545456"
+                    text-anchor="middle"
+                    class="value-label"
+                    fill="#374151"
+                    font-size="12"
+                    font-weight="600"
+                    data-category="3"
+                    data-series="2"
+                    data-astro-cid-iuwqtkks
+                  >
+                    95.9
+                  </text>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <!-- Legend -->
+          <div class="flex justify-center gap-8 mt-4" data-astro-cid-iuwqtkks>
+            <div class="legend-item" data-astro-cid-iuwqtkks>
+              <div
+                class="legend-color"
+                style="background-color: #e2e8f0"
+                data-astro-cid-iuwqtkks
+              ></div>
+              <span data-astro-cid-iuwqtkks>GR00T</span>
+            </div>
+            <div class="legend-item" data-astro-cid-iuwqtkks>
+              <div
+                class="legend-color"
+                style="background-color: #94a3b8"
+                data-astro-cid-iuwqtkks
+              ></div>
+              <span data-astro-cid-iuwqtkks>π0​</span>
+            </div>
+            <div class="legend-item" data-astro-cid-iuwqtkks>
+              <div
+                class="legend-color"
+                style="background-color: #475569"
+                data-astro-cid-iuwqtkks
+              ></div>
+              <span data-astro-cid-iuwqtkks>InternData-M1</span>
+            </div>
+          </div>
+        </div>
+        <script type="module">
+          const l = (e) => {
+              e.forEach((o) => {
+                if (o.isIntersecting) {
+                  const t = o.target,
+                    n = t.querySelectorAll(".bar"),
+                    c = t.querySelectorAll(".value-label");
+                  (n.forEach((r, a) => {
+                    setTimeout(() => {
+                      r.classList.add("animate");
+                    }, a * 100);
+                  }),
+                    c.forEach((r, a) => {
+                      setTimeout(
+                        () => {
+                          r.classList.add("animate");
+                        },
+                        a * 100 + 300,
+                      );
+                    }),
+                    s.unobserve(t));
+                }
+              });
+            },
+            s = new IntersectionObserver(l, {
+              threshold: 0.3,
+              rootMargin: "0px 0px -50px 0px",
+            });
+          document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".bar-chart-container").forEach((e) => {
+              s.observe(e);
+            });
+          });
+        </script>
+        <div
+          class="bar-chart-container bg-white rounded-lg shadow-sm p-6 mb-6 max-w-6xl mx-auto"
+          data-astro-cid-iuwqtkks
+        >
+          <h3
+            class="text-xl font-bold text-gray-900 mb-4 text-center"
+            data-astro-cid-iuwqtkks
+          >
+            Effects of Spatially Guided VLA Training
+          </h3>
+          <div
+            class="chart-wrapper"
+            style="width: 100%; height: 400px"
+            data-astro-cid-iuwqtkks
+          >
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 800 400"
+              class="chart-svg"
+              data-astro-cid-iuwqtkks
+            >
+              <!-- Y-axis -->
+              <line
+                x1="80"
+                y1="50"
+                x2="80"
+                y2="320"
+                stroke="#e5e7eb"
+                stroke-width="1"
+                data-astro-cid-iuwqtkks
+              ></line>
+              <!-- X-axis -->
+              <line
+                x1="80"
+                y1="320"
+                x2="720"
+                y2="320"
+                stroke="#e5e7eb"
+                stroke-width="1"
+                data-astro-cid-iuwqtkks
+              ></line>
+              <!-- Y-axis labels -->
+              <g data-astro-cid-iuwqtkks>
+                <line
+                  x1="75"
+                  y1="320"
+                  x2="80"
+                  y2="320"
+                  stroke="#9ca3af"
+                  stroke-width="1"
+                  data-astro-cid-iuwqtkks
+                ></line>
+                <text
+                  x="70"
+                  y="325"
+                  text-anchor="end"
+                  class="axis-label"
+                  data-astro-cid-iuwqtkks
+                >
+                  0
+                </text>
+              </g>
+              <g data-astro-cid-iuwqtkks>
+                <line
+                  x1="75"
+                  y1="252.5"
+                  x2="80"
+                  y2="252.5"
+                  stroke="#9ca3af"
+                  stroke-width="1"
+                  data-astro-cid-iuwqtkks
+                ></line>
+                <text
+                  x="70"
+                  y="257.5"
+                  text-anchor="end"
+                  class="axis-label"
+                  data-astro-cid-iuwqtkks
+                >
+                  20
+                </text>
+              </g>
+              <g data-astro-cid-iuwqtkks>
+                <line
+                  x1="75"
+                  y1="185"
+                  x2="80"
+                  y2="185"
+                  stroke="#9ca3af"
+                  stroke-width="1"
+                  data-astro-cid-iuwqtkks
+                ></line>
+                <text
+                  x="70"
+                  y="190"
+                  text-anchor="end"
+                  class="axis-label"
+                  data-astro-cid-iuwqtkks
+                >
+                  40
+                </text>
+              </g>
+              <g data-astro-cid-iuwqtkks>
+                <line
+                  x1="75"
+                  y1="117.5"
+                  x2="80"
+                  y2="117.5"
+                  stroke="#9ca3af"
+                  stroke-width="1"
+                  data-astro-cid-iuwqtkks
+                ></line>
+                <text
+                  x="70"
+                  y="122.5"
+                  text-anchor="end"
+                  class="axis-label"
+                  data-astro-cid-iuwqtkks
+                >
+                  60
+                </text>
+              </g>
+              <g data-astro-cid-iuwqtkks>
+                <line
+                  x1="75"
+                  y1="50"
+                  x2="80"
+                  y2="50"
+                  stroke="#9ca3af"
+                  stroke-width="1"
+                  data-astro-cid-iuwqtkks
+                ></line>
+                <text
+                  x="70"
+                  y="55"
+                  text-anchor="end"
+                  class="axis-label"
+                  data-astro-cid-iuwqtkks
+                >
+                  80
+                </text>
+              </g>
+              <!-- Y-axis title -->
+              <text
+                x="25"
+                y="185"
+                text-anchor="middle"
+                transform="rotate(-90, 25, 185)"
+                class="axis-label"
+                data-astro-cid-iuwqtkks
+              >
+                Success Rate (%)
+              </text>
+              <!-- Bars and labels -->
+              <g data-astro-cid-iuwqtkks>
+                <!-- Category label -->
+                <text
+                  x="175"
+                  y="345"
+                  text-anchor="middle"
+                  class="category-label"
+                  data-astro-cid-iuwqtkks
+                >
+                  Google Robot VM
+                </text>
+                <!-- Bars for this category -->
+                <g data-astro-cid-iuwqtkks>
+                  <!-- Bar -->
+                  <path
+                    d="M 110 320 L 110 158.8180870224666 Q 110 150.8180870224666 118 150.8180870224666 L 153 150.8180870224666 Q 161 150.8180870224666 161 158.8180870224666 L 161 320 Z"
+                    fill="#e2e8f0"
+                    class="bar"
+                    data-category="0"
+                    data-series="0"
+                    data-astro-cid-iuwqtkks
+                  ></path>
+                  <!-- Value label -->
+                  <text
+                    x="135.5"
+                    y="142.8180870224666"
+                    text-anchor="middle"
+                    class="value-label"
+                    fill="#374151"
+                    font-size="12"
+                    font-weight="600"
+                    data-category="0"
+                    data-series="0"
+                    data-astro-cid-iuwqtkks
+                  >
+                    66.1
+                  </text>
+                </g>
+                <g data-astro-cid-iuwqtkks>
+                  <!-- Bar -->
+                  <path
+                    d="M 165 320 L 165 121.44961607735331 Q 165 113.44961607735331 173 113.44961607735331 L 208 113.44961607735331 Q 216 113.44961607735331 216 121.44961607735331 L 216 320 Z"
+                    fill="#475569"
+                    class="bar"
+                    data-category="0"
+                    data-series="1"
+                    data-astro-cid-iuwqtkks
+                  ></path>
+                  <!-- Value label -->
+                  <text
+                    x="190.5"
+                    y="105.44961607735331"
+                    text-anchor="middle"
+                    class="value-label"
+                    fill="#374151"
+                    font-size="12"
+                    font-weight="600"
+                    data-category="0"
+                    data-series="1"
+                    data-astro-cid-iuwqtkks
+                  >
+                    80.7
+                  </text>
+                </g>
+              </g>
+              <g data-astro-cid-iuwqtkks>
+                <!-- Category label -->
+                <text
+                  x="325"
+                  y="345"
+                  text-anchor="middle"
+                  class="category-label"
+                  data-astro-cid-iuwqtkks
+                >
+                  Google Robot VA
+                </text>
+                <!-- Bars for this category -->
+                <g data-astro-cid-iuwqtkks>
+                  <!-- Bar -->
+                  <path
+                    d="M 260 320 L 260 165.47274623187033 Q 260 157.47274623187033 268 157.47274623187033 L 303 157.47274623187033 Q 311 157.47274623187033 311 165.47274623187033 L 311 320 Z"
+                    fill="#e2e8f0"
+                    class="bar"
+                    data-category="1"
+                    data-series="0"
+                    data-astro-cid-iuwqtkks
+                  ></path>
+                  <!-- Value label -->
+                  <text
+                    x="285.5"
+                    y="149.47274623187033"
+                    text-anchor="middle"
+                    class="value-label"
+                    fill="#374151"
+                    font-size="12"
+                    font-weight="600"
+                    data-category="1"
+                    data-series="0"
+                    data-astro-cid-iuwqtkks
+                  >
+                    63.5
+                  </text>
+                </g>
+                <g data-astro-cid-iuwqtkks>
+                  <!-- Bar -->
+                  <path
+                    d="M 315 320 L 315 133.47919234050622 Q 315 125.47919234050622 323 125.47919234050622 L 358 125.47919234050622 Q 366 125.47919234050622 366 133.47919234050622 L 366 320 Z"
+                    fill="#475569"
+                    class="bar"
+                    data-category="1"
+                    data-series="1"
+                    data-astro-cid-iuwqtkks
+                  ></path>
+                  <!-- Value label -->
+                  <text
+                    x="340.5"
+                    y="117.47919234050622"
+                    text-anchor="middle"
+                    class="value-label"
+                    fill="#374151"
+                    font-size="12"
+                    font-weight="600"
+                    data-category="1"
+                    data-series="1"
+                    data-astro-cid-iuwqtkks
+                  >
+                    76
+                  </text>
+                </g>
+              </g>
+              <g data-astro-cid-iuwqtkks>
+                <!-- Category label -->
+                <text
+                  x="475"
+                  y="345"
+                  text-anchor="middle"
+                  class="category-label"
+                  data-astro-cid-iuwqtkks
+                >
+                  WidowX VM
+                </text>
+                <!-- Bars for this category -->
+                <g data-astro-cid-iuwqtkks>
+                  <!-- Bar -->
+                  <path
+                    d="M 410 320 L 410 187.99620817139063 Q 410 179.99620817139063 418 179.99620817139063 L 453 179.99620817139063 Q 461 179.99620817139063 461 187.99620817139063 L 461 320 Z"
+                    fill="#e2e8f0"
+                    class="bar"
+                    data-category="2"
+                    data-series="0"
+                    data-astro-cid-iuwqtkks
+                  ></path>
+                  <!-- Value label -->
+                  <text
+                    x="435.5"
+                    y="171.99620817139063"
+                    text-anchor="middle"
+                    class="value-label"
+                    fill="#374151"
+                    font-size="12"
+                    font-weight="600"
+                    data-category="2"
+                    data-series="0"
+                    data-astro-cid-iuwqtkks
+                  >
+                    54.7
+                  </text>
+                </g>
+                <g data-astro-cid-iuwqtkks>
+                  <!-- Bar -->
+                  <path
+                    d="M 465 320 L 465 144.48497487913548 Q 465 136.48497487913548 473 136.48497487913548 L 508 136.48497487913548 Q 516 136.48497487913548 516 144.48497487913548 L 516 320 Z"
+                    fill="#475569"
+                    class="bar"
+                    data-category="2"
+                    data-series="1"
+                    data-astro-cid-iuwqtkks
+                  ></path>
+                  <!-- Value label -->
+                  <text
+                    x="490.5"
+                    y="128.48497487913548"
+                    text-anchor="middle"
+                    class="value-label"
+                    fill="#374151"
+                    font-size="12"
+                    font-weight="600"
+                    data-category="2"
+                    data-series="1"
+                    data-astro-cid-iuwqtkks
+                  >
+                    71.7
+                  </text>
+                </g>
+              </g>
+              <g data-astro-cid-iuwqtkks>
+                <!-- Category label -->
+                <text
+                  x="625"
+                  y="345"
+                  text-anchor="middle"
+                  class="category-label"
+                  data-astro-cid-iuwqtkks
+                >
+                  Libero
+                </text>
+                <!-- Bars for this category -->
+                <g data-astro-cid-iuwqtkks>
+                  <!-- Bar -->
+                  <path
+                    d="M 560 320 L 560 93.55123708408385 Q 560 85.55123708408385 568 85.55123708408385 L 603 85.55123708408385 Q 611 85.55123708408385 611 93.55123708408385 L 611 320 Z"
+                    fill="#e2e8f0"
+                    class="bar"
+                    data-category="3"
+                    data-series="0"
+                    data-astro-cid-iuwqtkks
+                  ></path>
+                  <!-- Value label -->
+                  <text
+                    x="585.5"
+                    y="77.55123708408385"
+                    text-anchor="middle"
+                    class="value-label"
+                    fill="#374151"
+                    font-size="12"
+                    font-weight="600"
+                    data-category="3"
+                    data-series="0"
+                    data-astro-cid-iuwqtkks
+                  >
+                    91.6
+                  </text>
+                </g>
+                <g data-astro-cid-iuwqtkks>
+                  <!-- Bar -->
+                  <path
+                    d="M 615 320 L 615 82.54545454545456 Q 615 74.54545454545456 623 74.54545454545456 L 658 74.54545454545456 Q 666 74.54545454545456 666 82.54545454545456 L 666 320 Z"
+                    fill="#475569"
+                    class="bar"
+                    data-category="3"
+                    data-series="1"
+                    data-astro-cid-iuwqtkks
+                  ></path>
+                  <!-- Value label -->
+                  <text
+                    x="640.5"
+                    y="66.54545454545456"
+                    text-anchor="middle"
+                    class="value-label"
+                    fill="#374151"
+                    font-size="12"
+                    font-weight="600"
+                    data-category="3"
+                    data-series="1"
+                    data-astro-cid-iuwqtkks
+                  >
+                    95.9
+                  </text>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <!-- Legend -->
+          <div class="flex justify-center gap-8 mt-4" data-astro-cid-iuwqtkks>
+            <div class="legend-item" data-astro-cid-iuwqtkks>
+              <div
+                class="legend-color"
+                style="background-color: #e2e8f0"
+                data-astro-cid-iuwqtkks
+              ></div>
+              <span data-astro-cid-iuwqtkks>Vanilla VLA</span>
+            </div>
+            <div class="legend-item" data-astro-cid-iuwqtkks>
+              <div
+                class="legend-color"
+                style="background-color: #475569"
+                data-astro-cid-iuwqtkks
+              ></div>
+              <span data-astro-cid-iuwqtkks>InternData-M1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Simpler Env -->
+      <!-- Intermediate Traj Video -->
+    </section>
+    <!-- InternData-M1 VLM Spatial Grounding Results -->
+    <h2
+      class="text-3xl font-bold text-gray-900 mb-4 text-center"
+      data-astro-cid-wxd7dqw6
+    >
+      System2 Spatial Reasoning Results
+    </h2>
+    <p class="text-gray-600 text-center mb-8 text-lg" data-astro-cid-wxd7dqw6>
+      Demonstrating InternData's System 2 capabilities in box detection, point
+      localization, and visual trace prediction.
+    </p>
+    <div class="system2-container" data-astro-cid-wxd7dqw6>
+      <section
+        class="bg-white rounded-lg shadow-sm p-6 mb-6 force-width"
+        data-astro-cid-wxd7dqw6
+      >
+        <div class="category-section" data-astro-cid-wxd7dqw6>
+          <h3 class="category-title" data-astro-cid-wxd7dqw6>
+            📦 Box Detection
+          </h3>
+          <p class="category-description" data-astro-cid-wxd7dqw6>
+            Precise bounding box detection and object localization
+          </p>
+          <div class="carousel-container" data-astro-cid-wxd7dqw6>
+            <div class="carousel-track" data-astro-cid-wxd7dqw6>
+              <div
+                class="image-item"
+                onclick="openModal('/interndata-a1.github.io/pic/vis_bbox/frame_idx_0.png__What is the oval-shaped, charcoal gray object around the vintage camera..png')"
+                data-astro-cid-wxd7dqw6
+              >
+                <img
+                  src="pic/vis_bbox/frame_idx_0.png__What&#32;is&#32;the&#32;oval-shaped,&#32;charcoal&#32;gray&#32;object&#32;around&#32;the&#32;vintage&#32;camera..png"
+                  alt="Camera object detection"
+                  data-astro-cid-wxd7dqw6
+                />
+                <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                  "What is the oval-shaped, charcoal gray object around the
+                  vintage camera."
+                </div>
+              </div>
+              <div
+                class="image-item"
+                onclick="openModal('/interndata-a1.github.io/pic/vis_bbox/23.jpg__Indicate points within the vacant area that lies between the blue cup and the teal bowl on the table..png')"
+                data-astro-cid-wxd7dqw6
+              >
+                <img
+                  src="pic/vis_bbox/23.jpg__Indicate&#32;points&#32;within&#32;the&#32;vacant&#32;area&#32;that&#32;lies&#32;between&#32;the&#32;blue&#32;cup&#32;and&#32;the&#32;teal&#32;bowl&#32;on&#32;the&#32;table..png"
+                  alt="Table area detection"
+                  data-astro-cid-wxd7dqw6
+                />
+                <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                  "Indicate points within the vacant area that lies between the
+                  blue cup and the teal bowl on the table."
+                </div>
+              </div>
+              <div
+                class="image-item"
+                onclick="openModal('/interndata-a1.github.io/pic/vis_bbox/0000002.png__could you please give me the glue stick..png')"
+                data-astro-cid-wxd7dqw6
+              >
+                <img
+                  src="pic/vis_bbox/0000002.png__could&#32;you&#32;please&#32;give&#32;me&#32;the&#32;glue&#32;stick..png"
+                  alt="Glue stick detection"
+                  data-astro-cid-wxd7dqw6
+                />
+                <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                  "could you please give me the glue stick."
+                </div>
+              </div>
+              <div
+                class="image-item"
+                onclick="openModal('/interndata-a1.github.io/pic/vis_bbox/obs_camera_20250827_150928_0445.jpg__put the grapes on the basket..png')"
+                data-astro-cid-wxd7dqw6
+              >
+                <img
+                  src="pic/vis_bbox/obs_camera_20250827_150928_0445.jpg__put&#32;the&#32;grapes&#32;on&#32;the&#32;basket..png"
+                  alt="Grapes detection"
+                  data-astro-cid-wxd7dqw6
+                />
+                <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                  "put the grapes on the basket."
+                </div>
+              </div>
+              <div
+                class="image-item"
+                onclick="openModal('/interndata-a1.github.io/pic/vis_bbox/obs_camera_20250826_145253_0511.jpg__Put the lettuce on the plate..png')"
+                data-astro-cid-wxd7dqw6
+              >
+                <img
+                  src="pic/vis_bbox/obs_camera_20250826_145253_0511.jpg__Put&#32;the&#32;lettuce&#32;on&#32;the&#32;plate..png"
+                  alt="Lettuce detection"
+                  data-astro-cid-wxd7dqw6
+                />
+                <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                  "Put the lettuce on the plate."
+                </div>
+              </div>
+              <div
+                class="image-item"
+                onclick="openModal('/interndata-a1.github.io/pic/vis_bbox/obs_camera_20250828_214504_0137.jpg__Put the pear in the white basket..png')"
+                data-astro-cid-wxd7dqw6
+              >
+                <img
+                  src="pic/vis_bbox/obs_camera_20250828_214504_0137.jpg__Put&#32;the&#32;pear&#32;in&#32;the&#32;white&#32;basket..png"
+                  alt="Pear detection"
+                  data-astro-cid-wxd7dqw6
+                />
+                <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                  "Put the pear in the white basket."
+                </div>
+              </div>
+              <div
+                class="image-item"
+                onclick="openModal('/interndata-a1.github.io/pic/vis_bbox/obs_camera_20250826_144739_0027.jpg__Put the bun on the plate.png')"
+                data-astro-cid-wxd7dqw6
+              >
+                <img
+                  src="pic/vis_bbox/obs_camera_20250826_144739_0027.jpg__Put&#32;the&#32;bun&#32;on&#32;the&#32;plate.png"
+                  alt="Food detection"
+                  data-astro-cid-wxd7dqw6
+                />
+                <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                  "Put the bun on the plate."
+                </div>
+              </div>
+              <div
+                class="image-item"
+                onclick="openModal('/interndata-a1.github.io/pic/vis_bbox/COCO_train2014_000000280191.jpg__a girl sitting on a bench near a boy..png')"
+                data-astro-cid-wxd7dqw6
+              >
+                <img
+                  src="pic/vis_bbox/COCO_train2014_000000280191.jpg__a&#32;girl&#32;sitting&#32;on&#32;a&#32;bench&#32;near&#32;a&#32;boy..png"
+                  alt="Person detection"
+                  data-astro-cid-wxd7dqw6
+                />
+                <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                  "a girl sitting on a bench near a boy."
+                </div>
+              </div>
+              <div
+                class="image-item"
+                onclick="openModal('/interndata-a1.github.io/pic/vis_bbox/frame_idx_0.png__What is the closest object to cabinet_.png')"
+                data-astro-cid-wxd7dqw6
+              >
+                <img
+                  src="pic/vis_bbox/frame_idx_0.png__What&#32;is&#32;the&#32;closest&#32;object&#32;to&#32;cabinet_.png"
+                  alt="Cabinet object detection"
+                  data-astro-cid-wxd7dqw6
+                />
+                <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                  "What is the closest object to cabinet?"
+                </div>
+              </div>
+              <div
+                class="image-item"
+                onclick="openModal('/interndata-a1.github.io/pic/vis_bbox/COCO_train2014_000000533220.jpg__a bush of plant behind middle woman..png')"
+                data-astro-cid-wxd7dqw6
+              >
+                <img
+                  src="pic/vis_bbox/COCO_train2014_000000533220.jpg__a&#32;bush&#32;of&#32;plant&#32;behind&#32;middle&#32;woman..png"
+                  alt="Plant detection"
+                  data-astro-cid-wxd7dqw6
+                />
+                <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                  "a bush of plant behind middle woman."
+                </div>
+              </div>
+              <div
+                class="image-item"
+                onclick="openModal('/interndata-a1.github.io/pic/vis_bbox/COCO_train2014_000000487992.jpg__the lady on the right with the red necktie..png')"
+                data-astro-cid-wxd7dqw6
+              >
+                <img
+                  src="pic/vis_bbox/COCO_train2014_000000487992.jpg__the&#32;lady&#32;on&#32;the&#32;right&#32;with&#32;the&#32;red&#32;necktie..png"
+                  alt="Lady detection"
+                  data-astro-cid-wxd7dqw6
+                />
+                <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                  "the lady on the right with the red necktie."
+                </div>
+              </div>
+              <div
+                class="image-item"
+                onclick="openModal('/interndata-a1.github.io/pic/vis_bbox/frame_idx_0.png__What is the oval-shaped, charcoal gray object around the vintage camera..png')"
+                data-astro-cid-wxd7dqw6
+              >
+                <img
+                  src="pic/vis_bbox/frame_idx_0.png__What&#32;is&#32;the&#32;oval-shaped,&#32;charcoal&#32;gray&#32;object&#32;around&#32;the&#32;vintage&#32;camera..png"
+                  alt="Camera object detection"
+                  data-astro-cid-wxd7dqw6
+                />
+                <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                  "What is the oval-shaped, charcoal gray object around the
+                  vintage camera."
+                </div>
+              </div>
+              <div
+                class="image-item"
+                onclick="openModal('/interndata-a1.github.io/pic/vis_bbox/23.jpg__Indicate points within the vacant area that lies between the blue cup and the teal bowl on the table..png')"
+                data-astro-cid-wxd7dqw6
+              >
+                <img
+                  src="pic/vis_bbox/23.jpg__Indicate&#32;points&#32;within&#32;the&#32;vacant&#32;area&#32;that&#32;lies&#32;between&#32;the&#32;blue&#32;cup&#32;and&#32;the&#32;teal&#32;bowl&#32;on&#32;the&#32;table..png"
+                  alt="Table area detection"
+                  data-astro-cid-wxd7dqw6
+                />
+                <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                  "Indicate points within the vacant area that lies between the
+                  blue cup and the teal bowl on the table."
+                </div>
+              </div>
+              <div
+                class="image-item"
+                onclick="openModal('/interndata-a1.github.io/pic/vis_bbox/0000002.png__could you please give me the glue stick..png')"
+                data-astro-cid-wxd7dqw6
+              >
+                <img
+                  src="pic/vis_bbox/0000002.png__could&#32;you&#32;please&#32;give&#32;me&#32;the&#32;glue&#32;stick..png"
+                  alt="Glue stick detection"
+                  data-astro-cid-wxd7dqw6
+                />
+                <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                  "could you please give me the glue stick."
+                </div>
+              </div>
+              <div
+                class="image-item"
+                onclick="openModal('/interndata-a1.github.io/pic/vis_bbox/obs_camera_20250827_150928_0445.jpg__put the grapes on the basket..png')"
+                data-astro-cid-wxd7dqw6
+              >
+                <img
+                  src="pic/vis_bbox/obs_camera_20250827_150928_0445.jpg__put&#32;the&#32;grapes&#32;on&#32;the&#32;basket..png"
+                  alt="Grapes detection"
+                  data-astro-cid-wxd7dqw6
+                />
+                <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                  "put the grapes on the basket."
+                </div>
+              </div>
+              <div
+                class="image-item"
+                onclick="openModal('/interndata-a1.github.io/pic/vis_bbox/obs_camera_20250826_145253_0511.jpg__Put the lettuce on the plate..png')"
+                data-astro-cid-wxd7dqw6
+              >
+                <img
+                  src="pic/vis_bbox/obs_camera_20250826_145253_0511.jpg__Put&#32;the&#32;lettuce&#32;on&#32;the&#32;plate..png"
+                  alt="Lettuce detection"
+                  data-astro-cid-wxd7dqw6
+                />
+                <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                  "Put the lettuce on the plate."
+                </div>
+              </div>
+              <div
+                class="image-item"
+                onclick="openModal('/interndata-a1.github.io/pic/vis_bbox/obs_camera_20250828_214504_0137.jpg__Put the pear in the white basket..png')"
+                data-astro-cid-wxd7dqw6
+              >
+                <img
+                  src="pic/vis_bbox/obs_camera_20250828_214504_0137.jpg__Put&#32;the&#32;pear&#32;in&#32;the&#32;white&#32;basket..png"
+                  alt="Pear detection"
+                  data-astro-cid-wxd7dqw6
+                />
+                <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                  "Put the pear in the white basket."
+                </div>
+              </div>
+              <div
+                class="image-item"
+                onclick="openModal('/interndata-a1.github.io/pic/vis_bbox/obs_camera_20250826_144739_0027.jpg__Put the bun on the plate.png')"
+                data-astro-cid-wxd7dqw6
+              >
+                <img
+                  src="pic/vis_bbox/obs_camera_20250826_144739_0027.jpg__Put&#32;the&#32;bun&#32;on&#32;the&#32;plate.png"
+                  alt="Food detection"
+                  data-astro-cid-wxd7dqw6
+                />
+                <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                  "Put the bun on the plate."
+                </div>
+              </div>
+              <div
+                class="image-item"
+                onclick="openModal('/interndata-a1.github.io/pic/vis_bbox/COCO_train2014_000000280191.jpg__a girl sitting on a bench near a boy..png')"
+                data-astro-cid-wxd7dqw6
+              >
+                <img
+                  src="pic/vis_bbox/COCO_train2014_000000280191.jpg__a&#32;girl&#32;sitting&#32;on&#32;a&#32;bench&#32;near&#32;a&#32;boy..png"
+                  alt="Person detection"
+                  data-astro-cid-wxd7dqw6
+                />
+                <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                  "a girl sitting on a bench near a boy."
+                </div>
+              </div>
+              <div
+                class="image-item"
+                onclick="openModal('/interndata-a1.github.io/pic/vis_bbox/frame_idx_0.png__What is the closest object to cabinet_.png')"
+                data-astro-cid-wxd7dqw6
+              >
+                <img
+                  src="pic/vis_bbox/frame_idx_0.png__What&#32;is&#32;the&#32;closest&#32;object&#32;to&#32;cabinet_.png"
+                  alt="Cabinet object detection"
+                  data-astro-cid-wxd7dqw6
+                />
+                <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                  "What is the closest object to cabinet?"
+                </div>
+              </div>
+              <div
+                class="image-item"
+                onclick="openModal('/interndata-a1.github.io/pic/vis_bbox/COCO_train2014_000000533220.jpg__a bush of plant behind middle woman..png')"
+                data-astro-cid-wxd7dqw6
+              >
+                <img
+                  src="pic/vis_bbox/COCO_train2014_000000533220.jpg__a&#32;bush&#32;of&#32;plant&#32;behind&#32;middle&#32;woman..png"
+                  alt="Plant detection"
+                  data-astro-cid-wxd7dqw6
+                />
+                <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                  "a bush of plant behind middle woman."
+                </div>
+              </div>
+              <div
+                class="image-item"
+                onclick="openModal('/interndata-a1.github.io/pic/vis_bbox/COCO_train2014_000000487992.jpg__the lady on the right with the red necktie..png')"
+                data-astro-cid-wxd7dqw6
+              >
+                <img
+                  src="pic/vis_bbox/COCO_train2014_000000487992.jpg__the&#32;lady&#32;on&#32;the&#32;right&#32;with&#32;the&#32;red&#32;necktie..png"
+                  alt="Lady detection"
+                  data-astro-cid-wxd7dqw6
+                />
+                <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                  "the lady on the right with the red necktie."
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Point Localization Category -->
+          <div class="category-section" data-astro-cid-wxd7dqw6>
+            <h3 class="category-title" data-astro-cid-wxd7dqw6>
+              📍 Point Localization
+            </h3>
+            <p class="category-description" data-astro-cid-wxd7dqw6>
+              Precise keypoint localization and spatial analysis
+            </p>
+            <div class="carousel-container" data-astro-cid-wxd7dqw6>
+              <div class="carousel-track" data-astro-cid-wxd7dqw6>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/obs_camera_20250827_150928_0445.jpg__put the grapes on the basket..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/obs_camera_20250827_150928_0445.jpg__put&#32;the&#32;grapes&#32;on&#32;the&#32;basket..png"
+                    alt="Grapes point"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "put the grapes on the basket."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/0000616.png__I want to get the large toothpaste box..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/0000616.png__I&#32;want&#32;to&#32;get&#32;the&#32;large&#32;toothpaste&#32;box..png"
+                    alt="Toothpaste point"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "I want to get the large toothpaste box."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/obs_camera_20250827_150928_1141.jpg__put the eggplant on the purple plate..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/obs_camera_20250827_150928_1141.jpg__put&#32;the&#32;eggplant&#32;on&#32;the&#32;purple&#32;plate..png"
+                    alt="Eggplant point"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "put the eggplant on the purple plate."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/obs_camera_20250826_145253_0511.jpg__Put the lettuce on the plate..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/obs_camera_20250826_145253_0511.jpg__Put&#32;the&#32;lettuce&#32;on&#32;the&#32;plate..png"
+                    alt="Lettuce point"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "Put the lettuce on the plate."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/obs_camera_20250828_214504_0137.jpg__Put the pear in the white basket..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/obs_camera_20250828_214504_0137.jpg__Put&#32;the&#32;pear&#32;in&#32;the&#32;white&#32;basket..png"
+                    alt="Pear point"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "Put the pear in the white basket."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/frame_idx_0.png__What on the table is used for computing tasks_.png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/frame_idx_0.png__What&#32;on&#32;the&#32;table&#32;is&#32;used&#32;for&#32;computing&#32;tasks_.png"
+                    alt="Computing point"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "What on the table is used for computing tasks?"
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/COCO_train2014_000000329502.jpg__a toddler in gray pants and a striped shirt..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/COCO_train2014_000000329502.jpg__a&#32;toddler&#32;in&#32;gray&#32;pants&#32;and&#32;a&#32;striped&#32;shirt..png"
+                    alt="Toddler point"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "a toddler in gray pants and a striped shirt."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/COCO_train2014_000000548416.jpg__soup with chicken and carrots and yellow broth..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/COCO_train2014_000000548416.jpg__soup&#32;with&#32;chicken&#32;and&#32;carrots&#32;and&#32;yellow&#32;broth..png"
+                    alt="Soup point"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "soup with chicken and carrots and yellow broth."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/images_000257.jpg__press the blue botton..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/images_000257.jpg__press&#32;the&#32;blue&#32;botton..png"
+                    alt="Button point"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "press the blue botton."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/COCO_train2014_000000445628.jpg__a small bird hanging on the net..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/COCO_train2014_000000445628.jpg__a&#32;small&#32;bird&#32;hanging&#32;on&#32;the&#32;net..png"
+                    alt="Bird point"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "a small bird hanging on the net."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/0000618.png__I hope to get the small blue oblong box..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/0000618.png__I&#32;hope&#32;to&#32;get&#32;the&#32;small&#32;blue&#32;oblong&#32;box..png"
+                    alt="Blue box point"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "I hope to get the small blue oblong box."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/0000617.png__could you find the light brown lion..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/0000617.png__could&#32;you&#32;find&#32;the&#32;light&#32;brown&#32;lion..png"
+                    alt="Lion point"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "could you find the light brown lion."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/24.jpg__Locate points within the unoccupied space that lies before the leftmost fruit on the table..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/24.jpg__Locate&#32;points&#32;within&#32;the&#32;unoccupied&#32;space&#32;that&#32;lies&#32;before&#32;the&#32;leftmost&#32;fruit&#32;on&#32;the&#32;table..png"
+                    alt="Fruit area points"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "Locate points within the unoccupied space that lies before
+                    the leftmost fruit on the table."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/obs_camera_20250827_150928_0445.jpg__put the grapes on the basket..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/obs_camera_20250827_150928_0445.jpg__put&#32;the&#32;grapes&#32;on&#32;the&#32;basket..png"
+                    alt="Grapes point"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "put the grapes on the basket."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/0000616.png__I want to get the large toothpaste box..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/0000616.png__I&#32;want&#32;to&#32;get&#32;the&#32;large&#32;toothpaste&#32;box..png"
+                    alt="Toothpaste point"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "I want to get the large toothpaste box."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/obs_camera_20250827_150928_1141.jpg__put the eggplant on the purple plate..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/obs_camera_20250827_150928_1141.jpg__put&#32;the&#32;eggplant&#32;on&#32;the&#32;purple&#32;plate..png"
+                    alt="Eggplant point"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "put the eggplant on the purple plate."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/obs_camera_20250826_145253_0511.jpg__Put the lettuce on the plate..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/obs_camera_20250826_145253_0511.jpg__Put&#32;the&#32;lettuce&#32;on&#32;the&#32;plate..png"
+                    alt="Lettuce point"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "Put the lettuce on the plate."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/obs_camera_20250828_214504_0137.jpg__Put the pear in the white basket..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/obs_camera_20250828_214504_0137.jpg__Put&#32;the&#32;pear&#32;in&#32;the&#32;white&#32;basket..png"
+                    alt="Pear point"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "Put the pear in the white basket."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/frame_idx_0.png__What on the table is used for computing tasks_.png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/frame_idx_0.png__What&#32;on&#32;the&#32;table&#32;is&#32;used&#32;for&#32;computing&#32;tasks_.png"
+                    alt="Computing point"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "What on the table is used for computing tasks?"
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/COCO_train2014_000000329502.jpg__a toddler in gray pants and a striped shirt..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/COCO_train2014_000000329502.jpg__a&#32;toddler&#32;in&#32;gray&#32;pants&#32;and&#32;a&#32;striped&#32;shirt..png"
+                    alt="Toddler point"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "a toddler in gray pants and a striped shirt."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/COCO_train2014_000000548416.jpg__soup with chicken and carrots and yellow broth..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/COCO_train2014_000000548416.jpg__soup&#32;with&#32;chicken&#32;and&#32;carrots&#32;and&#32;yellow&#32;broth..png"
+                    alt="Soup point"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "soup with chicken and carrots and yellow broth."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/images_000257.jpg__press the blue botton..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/images_000257.jpg__press&#32;the&#32;blue&#32;botton..png"
+                    alt="Button point"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "press the blue botton."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/COCO_train2014_000000445628.jpg__a small bird hanging on the net..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/COCO_train2014_000000445628.jpg__a&#32;small&#32;bird&#32;hanging&#32;on&#32;the&#32;net..png"
+                    alt="Bird point"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "a small bird hanging on the net."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/0000618.png__I hope to get the small blue oblong box..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/0000618.png__I&#32;hope&#32;to&#32;get&#32;the&#32;small&#32;blue&#32;oblong&#32;box..png"
+                    alt="Blue box point"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "I hope to get the small blue oblong box."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/0000617.png__could you find the light brown lion..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/0000617.png__could&#32;you&#32;find&#32;the&#32;light&#32;brown&#32;lion..png"
+                    alt="Lion point"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "could you find the light brown lion."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_point/24.jpg__Locate points within the unoccupied space that lies before the leftmost fruit on the table..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_point/24.jpg__Locate&#32;points&#32;within&#32;the&#32;unoccupied&#32;space&#32;that&#32;lies&#32;before&#32;the&#32;leftmost&#32;fruit&#32;on&#32;the&#32;table..png"
+                    alt="Fruit area points"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "Locate points within the unoccupied space that lies before
+                    the leftmost fruit on the table."
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Trajectory Prediction Category -->
+          <div class="category-section" data-astro-cid-wxd7dqw6>
+            <h3 class="category-title" data-astro-cid-wxd7dqw6>
+              📈 Trajectory Prediction
+            </h3>
+            <p class="category-description" data-astro-cid-wxd7dqw6>
+              Intelligent trajectory prediction and motion path planning
+            </p>
+            <div class="carousel-container" data-astro-cid-wxd7dqw6>
+              <div class="carousel-track" data-astro-cid-wxd7dqw6>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/put the spoon on the towel2_frame0.png__put the spoon on the towel..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/put&#32;the&#32;spoon&#32;on&#32;the&#32;towel2_frame0.png__put&#32;the&#32;spoon&#32;on&#32;the&#32;towel..png"
+                    alt="Spoon trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "put the spoon on the towel."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/place apple into top drawer2_frame0.png__place apple into top drawer..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/place&#32;apple&#32;into&#32;top&#32;drawer2_frame0.png__place&#32;apple&#32;into&#32;top&#32;drawer..png"
+                    alt="Apple trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "place apple into top drawer."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/close bottom drawer_frame0.png__close the bottom drawer..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/close&#32;bottom&#32;drawer_frame0.png__close&#32;the&#32;bottom&#32;drawer..png"
+                    alt="Close drawer trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "close the bottom drawer."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/obs_camera_20250826_145253_0511.jpg__Put the lettuce on the plate..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/obs_camera_20250826_145253_0511.jpg__Put&#32;the&#32;lettuce&#32;on&#32;the&#32;plate..png"
+                    alt="Lettuce trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "Put the lettuce on the plate."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/open_mid_drawer2_frame0.png__open the middle drawer..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/open_mid_drawer2_frame0.png__open&#32;the&#32;middle&#32;drawer..png"
+                    alt="Open drawer 2 trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "open the middle drawer."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/stack the green block on the yellow block_frame0.png__stack the green block on the yellow one..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/stack&#32;the&#32;green&#32;block&#32;on&#32;the&#32;yellow&#32;block_frame0.png__stack&#32;the&#32;green&#32;block&#32;on&#32;the&#32;yellow&#32;one..png"
+                    alt="Block stacking trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "stack the green block on the yellow one."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/put eggplant into yellow basket2_frame0.png__put eggplant into yellow basket..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/put&#32;eggplant&#32;into&#32;yellow&#32;basket2_frame0.png__put&#32;eggplant&#32;into&#32;yellow&#32;basket..png"
+                    alt="Eggplant basket trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "put eggplant into yellow basket."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/close top drawer_frame0.png__close the drawer..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/close&#32;top&#32;drawer_frame0.png__close&#32;the&#32;drawer..png"
+                    alt="Close top drawer trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "close the drawer."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/close mid drawer_frame0.png__close the drawer..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/close&#32;mid&#32;drawer_frame0.png__close&#32;the&#32;drawer..png"
+                    alt="Close mid drawer trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "close the drawer."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/pick coke_frame0.png__put the coke on the front side of the table..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/pick&#32;coke_frame0.png__put&#32;the&#32;coke&#32;on&#32;the&#32;front&#32;side&#32;of&#32;the&#32;table..png"
+                    alt="Coke trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "put the coke on the front side of the table."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/obs_camera_20250828_214504_0137.jpg__Put the pear in the white basket..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/obs_camera_20250828_214504_0137.jpg__Put&#32;the&#32;pear&#32;in&#32;the&#32;white&#32;basket..png"
+                    alt="Pear trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "Put the pear in the white basket."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/open_mid_drawer_frame0.png__open the middle drawer..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/open_mid_drawer_frame0.png__open&#32;the&#32;middle&#32;drawer..png"
+                    alt="Open drawer trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "open the middle drawer."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/obs_camera_20250826_144739_0027.jpg__Put the bun on the plate.png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/obs_camera_20250826_144739_0027.jpg__Put&#32;the&#32;bun&#32;on&#32;the&#32;plate.png"
+                    alt="Bun trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "Put the bun on the plate."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/obs_camera_20250827_150928_0445.jpg__put the grapes on the basket..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/obs_camera_20250827_150928_0445.jpg__put&#32;the&#32;grapes&#32;on&#32;the&#32;basket..png"
+                    alt="Grapes trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "put the grapes on the basket."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/pick coke2_frame0.png__put coke..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/pick&#32;coke2_frame0.png__put&#32;coke..png"
+                    alt="Coke 2 trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "put coke."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/put carrot on plate_frame0.png__put carrot on plate..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/put&#32;carrot&#32;on&#32;plate_frame0.png__put&#32;carrot&#32;on&#32;plate..png"
+                    alt="Carrot trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "put carrot on plate."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/put the spoon on the towel2_frame0.png__put the spoon on the towel..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/put&#32;the&#32;spoon&#32;on&#32;the&#32;towel2_frame0.png__put&#32;the&#32;spoon&#32;on&#32;the&#32;towel..png"
+                    alt="Spoon trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "put the spoon on the towel."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/place apple into top drawer2_frame0.png__place apple into top drawer..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/place&#32;apple&#32;into&#32;top&#32;drawer2_frame0.png__place&#32;apple&#32;into&#32;top&#32;drawer..png"
+                    alt="Apple trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "place apple into top drawer."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/close bottom drawer_frame0.png__close the bottom drawer..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/close&#32;bottom&#32;drawer_frame0.png__close&#32;the&#32;bottom&#32;drawer..png"
+                    alt="Close drawer trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "close the bottom drawer."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/obs_camera_20250826_145253_0511.jpg__Put the lettuce on the plate..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/obs_camera_20250826_145253_0511.jpg__Put&#32;the&#32;lettuce&#32;on&#32;the&#32;plate..png"
+                    alt="Lettuce trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "Put the lettuce on the plate."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/open_mid_drawer2_frame0.png__open the middle drawer..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/open_mid_drawer2_frame0.png__open&#32;the&#32;middle&#32;drawer..png"
+                    alt="Open drawer 2 trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "open the middle drawer."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/stack the green block on the yellow block_frame0.png__stack the green block on the yellow one..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/stack&#32;the&#32;green&#32;block&#32;on&#32;the&#32;yellow&#32;block_frame0.png__stack&#32;the&#32;green&#32;block&#32;on&#32;the&#32;yellow&#32;one..png"
+                    alt="Block stacking trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "stack the green block on the yellow one."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/put eggplant into yellow basket2_frame0.png__put eggplant into yellow basket..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/put&#32;eggplant&#32;into&#32;yellow&#32;basket2_frame0.png__put&#32;eggplant&#32;into&#32;yellow&#32;basket..png"
+                    alt="Eggplant basket trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "put eggplant into yellow basket."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/close top drawer_frame0.png__close the drawer..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/close&#32;top&#32;drawer_frame0.png__close&#32;the&#32;drawer..png"
+                    alt="Close top drawer trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "close the drawer."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/close mid drawer_frame0.png__close the drawer..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/close&#32;mid&#32;drawer_frame0.png__close&#32;the&#32;drawer..png"
+                    alt="Close mid drawer trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "close the drawer."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/pick coke_frame0.png__put the coke on the front side of the table..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/pick&#32;coke_frame0.png__put&#32;the&#32;coke&#32;on&#32;the&#32;front&#32;side&#32;of&#32;the&#32;table..png"
+                    alt="Coke trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "put the coke on the front side of the table."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/obs_camera_20250828_214504_0137.jpg__Put the pear in the white basket..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/obs_camera_20250828_214504_0137.jpg__Put&#32;the&#32;pear&#32;in&#32;the&#32;white&#32;basket..png"
+                    alt="Pear trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "Put the pear in the white basket."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/open_mid_drawer_frame0.png__open the middle drawer..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/open_mid_drawer_frame0.png__open&#32;the&#32;middle&#32;drawer..png"
+                    alt="Open drawer trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "open the middle drawer."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/obs_camera_20250826_144739_0027.jpg__Put the bun on the plate.png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/obs_camera_20250826_144739_0027.jpg__Put&#32;the&#32;bun&#32;on&#32;the&#32;plate.png"
+                    alt="Bun trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "Put the bun on the plate."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/obs_camera_20250827_150928_0445.jpg__put the grapes on the basket..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/obs_camera_20250827_150928_0445.jpg__put&#32;the&#32;grapes&#32;on&#32;the&#32;basket..png"
+                    alt="Grapes trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "put the grapes on the basket."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/pick coke2_frame0.png__put coke..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/pick&#32;coke2_frame0.png__put&#32;coke..png"
+                    alt="Coke 2 trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "put coke."
+                  </div>
+                </div>
+                <div
+                  class="image-item"
+                  onclick="openModal('/interndata-a1.github.io/pic/vis_traj/end/put carrot on plate_frame0.png__put carrot on plate..png')"
+                  data-astro-cid-wxd7dqw6
+                >
+                  <img
+                    src="pic/vis_traj/end/put&#32;carrot&#32;on&#32;plate_frame0.png__put&#32;carrot&#32;on&#32;plate..png"
+                    alt="Carrot trajectory"
+                    data-astro-cid-wxd7dqw6
+                  />
+                  <div class="image-overlay" data-astro-cid-wxd7dqw6>
+                    "put carrot on plate."
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Modal for image viewing -->
+      <div id="imageModal" class="modal" data-astro-cid-wxd7dqw6>
+        <span class="close" onclick="closeModal()" data-astro-cid-wxd7dqw6
+          >&times;</span
+        >
+        <img class="modal-content" id="modalImage" data-astro-cid-wxd7dqw6 />
+      </div>
+      <script type="module">
+        function o() {
+          const e = document.getElementById("imageModal");
+          e && (e.style.display = "none");
+        }
+        window.onclick = function (e) {
+          const n = document.getElementById("imageModal");
+          n && e.target === n && (n.style.display = "none");
+        };
+        document.addEventListener("keydown", function (e) {
+          e.key === "Escape" && o();
+        });
+      </script>
+    </div>
+    <!-- Data Distribution Section -->
+    <section class="py-8">
+      <div class="max-w-6xl mx-auto px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+          VLM Pre-training Data Distribution
+        </h2>
+        <p class="text-gray-600 text-center mb-8 text-lg">
+          Comprehensive dataset composition for spatial grounding pre-training
+        </p>
+        <div
+          class="donut-chart-container bg-white rounded-lg shadow-sm p-6 mb-6 max-w-6xl mx-auto"
+          data-astro-cid-b4s4quxa
+        >
+          <div
+            class="flex items-center justify-center gap-16"
+            data-astro-cid-b4s4quxa
+          >
+            <!-- Chart -->
+            <div
+              class="chart-wrapper"
+              style="width: 400px; height: 400px"
+              data-astro-cid-b4s4quxa
+            >
+              <svg
+                width="100%"
+                height="100%"
+                viewBox="0 0 400 400"
+                class="chart-svg"
+                data-astro-cid-b4s4quxa
+              >
+                <defs data-astro-cid-b4s4quxa>
+                  <!-- Define text paths for curved text -->
+                  <path
+                    id="inner-text-path-0"
+                    d="M 200 115 A 85 85 0 0 1 282.341820349918 178.90913416993433"
+                    fill="none"
+                    data-astro-cid-b4s4quxa
+                  ></path>
+                  <path
+                    id="inner-text-path-1"
+                    d="M 282.341820349918 178.90913416993433 A 85 85 0 1 1 199.99999999999997 115"
+                    fill="none"
+                    data-astro-cid-b4s4quxa
+                  ></path>
+                  <path
+                    id="outer-text-path-0"
+                    d="M 200 50 A 150 150 0 0 1 345.3090947351494 162.78082500576647"
+                    fill="none"
+                    data-astro-cid-b4s4quxa
+                  ></path>
+                  <path
+                    id="outer-text-path-1"
+                    d="M 345.3090947351494 162.78082500576647 A 150 150 0 0 1 258.97825347423645 337.9186920512543"
+                    fill="none"
+                    data-astro-cid-b4s4quxa
+                  ></path>
+                  <path
+                    id="outer-text-path-2"
+                    d="M 258.97825347423645 337.9186920512543 A 150 150 0 0 1 54.69090526485061 237.21917499423353"
+                    fill="none"
+                    data-astro-cid-b4s4quxa
+                  ></path>
+                  <path
+                    id="outer-text-path-3"
+                    d="M 54.69090526485061 237.21917499423353 A 150 150 0 0 1 199.99999999999997 50"
+                    fill="none"
+                    data-astro-cid-b4s4quxa
+                  ></path>
+                </defs>
+                <!-- Outer ring segments -->
+                <path
+                  d="M 374.3709136821793 155.3369900069198 A 180 180 0 0 0 200 20 L 200 80 A 120 120 0 0 1 316.2472757881195 170.22466000461318 z"
+                  fill="#06b6d4"
+                  class="donut-segment outer-segment"
+                  data-index="0"
+                  data-ring="outer"
+                  data-astro-cid-b4s4quxa
+                ></path>
+                <path
+                  d="M 270.7739041690837 365.5024304615051 A 180 180 0 0 0 374.3709136821793 155.3369900069198 L 316.2472757881195 170.22466000461318 A 120 120 0 0 1 247.18260277938919 310.33495364100344 z"
+                  fill="#eab308"
+                  class="donut-segment outer-segment"
+                  data-index="1"
+                  data-ring="outer"
+                  data-astro-cid-b4s4quxa
+                ></path>
+                <path
+                  d="M 25.629086317820736 244.66300999308027 A 180 180 0 0 0 270.7739041690837 365.5024304615051 L 247.18260277938919 310.33495364100344 A 120 120 0 0 1 83.75272421188049 229.77533999538684 z"
+                  fill="#ea580c"
+                  class="donut-segment outer-segment"
+                  data-index="2"
+                  data-ring="outer"
+                  data-astro-cid-b4s4quxa
+                ></path>
+                <path
+                  d="M 199.99999999999997 20 A 180 180 0 0 0 25.629086317820736 244.66300999308027 L 83.75272421188049 229.77533999538684 A 120 120 0 0 1 199.99999999999997 80 z"
+                  fill="#dc2626"
+                  class="donut-segment outer-segment"
+                  data-index="3"
+                  data-ring="outer"
+                  data-astro-cid-b4s4quxa
+                ></path>
+                <!-- Inner ring segments -->
+                <path
+                  d="M 306.5600028057762 172.7059383375621 A 110 110 0 0 0 200 90 L 200 140 A 60 60 0 0 1 258.12363789405975 185.1123300023066 z"
+                  fill="#3b82f6"
+                  class="donut-segment inner-segment"
+                  data-index="0"
+                  data-ring="inner"
+                  data-astro-cid-b4s4quxa
+                ></path>
+                <path
+                  d="M 199.99999999999997 90 A 110 110 0 1 0 306.5600028057762 172.7059383375621 L 258.12363789405975 185.1123300023066 A 60 60 0 1 1 200 140 z"
+                  fill="#f59e0b"
+                  class="donut-segment inner-segment"
+                  data-index="1"
+                  data-ring="inner"
+                  data-astro-cid-b4s4quxa
+                ></path>
+                <!-- Center circle with dashed border -->
+                <circle
+                  cx="200"
+                  cy="200"
+                  r="55"
+                  fill="transparent"
+                  stroke="#60a5fa"
+                  stroke-width="2"
+                  stroke-dasharray="8,4"
+                  opacity="0.6"
+                  data-astro-cid-b4s4quxa
+                ></circle>
+                <!-- Center text -->
+                <g class="center-text" data-astro-cid-b4s4quxa>
+                  <text
+                    x="200"
+                    y="205"
+                    text-anchor="middle"
+                    fill="black"
+                    font-size="24"
+                    font-weight="700"
+                    data-astro-cid-b4s4quxa
+                  >
+                    Pre-training Data
+                  </text>
+                  <text
+                    x="200"
+                    y="225"
+                    text-anchor="middle"
+                    fill="black"
+                    font-size="20"
+                    font-weight="600"
+                    data-astro-cid-b4s4quxa
+                  >
+                    3,032K
+                  </text>
+                </g>
+                <!-- Ring labels -->
+                <text
+                  fill="white"
+                  font-size="14"
+                  font-weight="600"
+                  text-anchor="middle"
+                  data-astro-cid-b4s4quxa
+                >
+                  <textPath
+                    href="#inner-text-path-0"
+                    startOffset="50%"
+                    data-astro-cid-b4s4quxa
+                  >
+                    General VQA
+                  </textPath>
+                </text>
+                <text
+                  fill="white"
+                  font-size="14"
+                  font-weight="600"
+                  text-anchor="middle"
+                  data-astro-cid-b4s4quxa
+                >
+                  <textPath
+                    href="#inner-text-path-1"
+                    startOffset="50%"
+                    data-astro-cid-b4s4quxa
+                  >
+                    Spatial Grounding QA
+                  </textPath>
+                </text>
+                <text
+                  fill="white"
+                  font-size="12"
+                  font-weight="600"
+                  text-anchor="middle"
+                  data-astro-cid-b4s4quxa
+                >
+                  <textPath
+                    href="#outer-text-path-0"
+                    startOffset="50%"
+                    data-astro-cid-b4s4quxa
+                  >
+                    VQA
+                  </textPath>
+                </text>
+                <text
+                  fill="white"
+                  font-size="12"
+                  font-weight="600"
+                  text-anchor="middle"
+                  data-astro-cid-b4s4quxa
+                >
+                  <textPath
+                    href="#outer-text-path-1"
+                    startOffset="50%"
+                    data-astro-cid-b4s4quxa
+                  >
+                    Trajectory-QA
+                  </textPath>
+                </text>
+                <text
+                  fill="white"
+                  font-size="12"
+                  font-weight="600"
+                  text-anchor="middle"
+                  data-astro-cid-b4s4quxa
+                >
+                  <textPath
+                    href="#outer-text-path-2"
+                    startOffset="50%"
+                    data-astro-cid-b4s4quxa
+                  >
+                    Point-QA
+                  </textPath>
+                </text>
+                <text
+                  fill="white"
+                  font-size="12"
+                  font-weight="600"
+                  text-anchor="middle"
+                  data-astro-cid-b4s4quxa
+                >
+                  <textPath
+                    href="#outer-text-path-3"
+                    startOffset="50%"
+                    data-astro-cid-b4s4quxa
+                  >
+                    BOX-QA
+                  </textPath>
+                </text>
+              </svg>
+            </div>
+            <!-- Legend -->
+            <div class="legend" data-astro-cid-b4s4quxa>
+              <!-- Inner ring legend -->
+              <div class="legend-section" data-astro-cid-b4s4quxa>
+                <div class="legend-title" data-astro-cid-b4s4quxa>
+                  VLM Training Data
+                </div>
+                <div class="legend-item" data-astro-cid-b4s4quxa>
+                  <div
+                    class="legend-color"
+                    style="background-color: #3b82f6"
+                    data-astro-cid-b4s4quxa
+                  ></div>
+                  <span data-astro-cid-b4s4quxa>General VQA</span>
+                  <span class="text-gray-500 ml-auto" data-astro-cid-b4s4quxa>
+                    21.0%
+                  </span>
+                </div>
+                <div class="legend-item" data-astro-cid-b4s4quxa>
+                  <div
+                    class="legend-color"
+                    style="background-color: #f59e0b"
+                    data-astro-cid-b4s4quxa
+                  ></div>
+                  <span data-astro-cid-b4s4quxa>Spatial Grounding QA</span>
+                  <span class="text-gray-500 ml-auto" data-astro-cid-b4s4quxa>
+                    79.0%
+                  </span>
+                </div>
+              </div>
+              <!-- Outer ring legend -->
+              <div class="legend-section" data-astro-cid-b4s4quxa>
+                <div class="legend-title" data-astro-cid-b4s4quxa>
+                  Detailed Components
+                </div>
+                <div class="legend-item" data-astro-cid-b4s4quxa>
+                  <div
+                    class="legend-color"
+                    style="background-color: #06b6d4"
+                    data-astro-cid-b4s4quxa
+                  ></div>
+                  <span data-astro-cid-b4s4quxa>VQA</span>
+                  <span class="text-gray-500 ml-auto" data-astro-cid-b4s4quxa>
+                    21.0%
+                  </span>
+                </div>
+                <div class="legend-item" data-astro-cid-b4s4quxa>
+                  <div
+                    class="legend-color"
+                    style="background-color: #eab308"
+                    data-astro-cid-b4s4quxa
+                  ></div>
+                  <span data-astro-cid-b4s4quxa>Trajectory-QA</span>
+                  <span class="text-gray-500 ml-auto" data-astro-cid-b4s4quxa>
+                    22.6%
+                  </span>
+                </div>
+                <div class="legend-item" data-astro-cid-b4s4quxa>
+                  <div
+                    class="legend-color"
+                    style="background-color: #ea580c"
+                    data-astro-cid-b4s4quxa
+                  ></div>
+                  <span data-astro-cid-b4s4quxa>Point-QA</span>
+                  <span class="text-gray-500 ml-auto" data-astro-cid-b4s4quxa>
+                    27.4%
+                  </span>
+                </div>
+                <div class="legend-item" data-astro-cid-b4s4quxa>
+                  <div
+                    class="legend-color"
+                    style="background-color: #dc2626"
+                    data-astro-cid-b4s4quxa
+                  ></div>
+                  <span data-astro-cid-b4s4quxa>BOX-QA</span>
+                  <span class="text-gray-500 ml-auto" data-astro-cid-b4s4quxa>
+                    29.0%
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="module">
+          const l = (t) => {
+              t.forEach((s) => {
+                if (s.isIntersecting) {
+                  const e = s.target,
+                    n = e.querySelectorAll(".outer-segment"),
+                    c = e.querySelectorAll(".inner-segment"),
+                    i = e.querySelector(".center-text");
+                  (n.forEach((r, o) => {
+                    setTimeout(() => {
+                      r.classList.add("animate");
+                    }, o * 200);
+                  }),
+                    c.forEach((r, o) => {
+                      setTimeout(
+                        () => {
+                          r.classList.add("animate");
+                        },
+                        n.length * 200 + o * 200,
+                      );
+                    }),
+                    setTimeout(
+                      () => {
+                        i?.classList.add("animate");
+                      },
+                      (n.length + c.length) * 200 + 300,
+                    ),
+                    a.unobserve(e));
+                }
+              });
+            },
+            a = new IntersectionObserver(l, {
+              threshold: 0.3,
+              rootMargin: "0px 0px -50px 0px",
+            });
+          document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".donut-chart-container").forEach((t) => {
+              a.observe(t);
+            });
+          });
+        </script>
+      </div>
+    </section>
+    <!-- Reference Section -->
+    <section
+      class="py-8"
+      data-astro-cid-j7pv25f6
+      style="
+        --centuryGothicFont: /interndata-a1.github.io/fonts/centurygothic.ttf;
+        --centuryGothicBoldFont: /interndata-a1.github.io/fonts/centurygothic_bold.ttf;
+      "
+    >
+      <div
+        class="max-w-6xl mx-auto px-8"
+        data-astro-cid-j7pv25f6
+        style="
+          --centuryGothicFont: /interndata-a1.github.io/fonts/centurygothic.ttf;
+          --centuryGothicBoldFont: /interndata-a1.github.io/fonts/centurygothic_bold.ttf;
+        "
+      >
+        <section
+          class="bg-white rounded-lg shadow-sm p-4 mb-6 max-w-6xl mx-auto"
+          data-astro-cid-e5g6tzce
+        >
+          <h2
+            class="text-xl font-bold text-gray-900 mb-3 text-center"
+            data-astro-cid-e5g6tzce
+          >
+            Reference
+          </h2>
+          <div class="relative" data-astro-cid-e5g6tzce>
+            <!-- Citation Text -->
+            <div
+              class="citation-text text-gray-800 mb-3"
+              data-astro-cid-e5g6tzce
+            >
+              @article{InternDatam1, &nbsp;&nbsp;title = {InternData-M1:
+              Pioneering High-Fidelity Synthetic Data for Pre-training
+              Generalist Policy}, &nbsp;&nbsp;author = {InternData-M1
+              Contributors}, &nbsp;&nbsp;journal = {arXiv preprint
+              arXiv:2510.13778}, &nbsp;&nbsp;year = {2025}, }
+            </div>
+            <!-- Copy Button -->
+            <div class="flex justify-center" data-astro-cid-e5g6tzce>
+              <button
+                id="copy-button"
+                class="copy-button bg-gray-100 hover:bg-gray-200 border border-gray-300 text-gray-700 px-3 py-1.5 rounded-md text-sm font-medium hover:border-gray-400 transition-all duration-300 flex items-center gap-1.5 shadow-sm"
+                data-astro-cid-e5g6tzce
+              >
+                <svg
+                  id="copy-icon"
+                  class="w-3.5 h-3.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  data-astro-cid-e5g6tzce
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                    data-astro-cid-e5g6tzce
+                  ></path>
+                </svg>
+                <svg
+                  id="check-icon"
+                  class="w-3.5 h-3.5 hidden copy-success"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  data-astro-cid-e5g6tzce
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                    data-astro-cid-e5g6tzce
+                  ></path>
+                </svg>
+                <span id="button-text" data-astro-cid-e5g6tzce
+                  >Copy Citation</span
+                >
+              </button>
+            </div>
+          </div>
+        </section>
+        <script type="module">
+          const s = `@article{InternDatam1,
+  title   = {InternData-M1: Pioneering High-Fidelity Synthetic Data for Pre-training Generalist Policy},
+  author  = {InternData-M1 Contributors},
+  journal = {arXiv preprint arXiv:2510.13778},
+  year    = {2025}
+}`,
+            t = document.getElementById("copy-button"),
+            o = document.getElementById("copy-icon"),
+            n = document.getElementById("check-icon"),
+            c = document.getElementById("button-text");
+          t?.addEventListener("click", async () => {
+            try {
+              (await navigator.clipboard.writeText(s),
+                o?.classList.add("hidden"),
+                n?.classList.remove("hidden"),
+                (c.textContent = "Copied!"),
+                t.classList.add("copy-success"),
+                setTimeout(() => {
+                  (o?.classList.remove("hidden"),
+                    n?.classList.add("hidden"),
+                    (c.textContent = "Copy Citation"),
+                    t.classList.remove("copy-success"));
+                }, 2e3));
+            } catch {
+              const e = document.createElement("textarea");
+              ((e.value = s),
+                document.body.appendChild(e),
+                e.select(),
+                document.execCommand("copy"),
+                document.body.removeChild(e),
+                o?.classList.add("hidden"),
+                n?.classList.remove("hidden"),
+                (c.textContent = "Copied!"),
+                t.classList.add("copy-success"),
+                setTimeout(() => {
+                  (o?.classList.remove("hidden"),
+                    n?.classList.add("hidden"),
+                    (c.textContent = "Copy Citation"),
+                    t.classList.remove("copy-success"));
+                }, 2e3));
+            }
+          });
+        </script>
+      </div>
+    </section>
+  </body>
+</html>
